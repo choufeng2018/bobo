@@ -1,0 +1,187 @@
+header{
+    background-color: rgba(102,102,102,0.8);
+}
+.logo-box a{
+    background-position: 0 -42px;
+}
+.banner{
+    margin-top: 70px;
+    width: 100%;
+    height: 556px;
+    background: url("../resource/daka/banner.png") no-repeat center;
+    background-size: cover;
+}
+
+/*=======================tab=====================*/
+.tab{
+    width: 100%;
+    height: 134px;
+    background-color: rgb(222,216,222);
+}
+.tab .left{
+    width: 50%;
+    float: left;
+}
+.tab .right{
+    width: 50%;
+    float: right;
+}
+.tab .inner{
+    height: 134px;
+    width: 60%;
+    margin: auto;
+    border-bottom: 9px solid #5d4f5c;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tab .in-l{
+    float: right;
+}
+.tab .in-r{
+    float: left;
+}
+.tab-btn{
+    height: 134px;
+    display: inline-block;
+    color: #ada5ac;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.tab-btn.active{
+    color: #5d4f5c;
+    background: url("../resource/daka/border_bg.gif") repeat-x bottom center;
+}
+.tab-name{
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 30px;
+}
+.tab-en{
+    font-size: 12px;
+}
+.tb-l{
+    margin-left: 40px;
+}
+.tb-r{
+    float: right;
+    margin-right: 40px;
+}
+@media screen and (max-width: 768px){
+    .banner{
+        margin-top: 70px;
+        width: 100%;
+        height: 150px;
+        background: url("../resource/daka/banner.png") no-repeat center;
+        background-size: cover;
+    }
+    .tab{
+        height: 100px;
+    }
+    .tab .inner{
+        height: 100px;
+        width: 90%;
+        margin: auto;
+    }
+    .tab-btn{
+        height: 100px;
+    }
+    .tab-name{
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .tb-l{
+        margin-left: 30px;
+    }
+    .tb-r{
+        float: right;
+        margin-right: 30px;
+    }
+}
+/*==========================list-box=========================*/
+.main{
+    background-color: #f4eae8;
+}
+.list-box{
+    padding: 30px 0 25px 0;
+}
+.list-item{
+    width: 23%;
+    height: 351px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 20px 18px 25px;
+    background-color: #dad3db;
+    border: 1px solid #b19592;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1%;
+    float: left;
+}
+
+.img-border{
+    width: 140px;
+    height: 140px;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+.img-border img{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+.list-item .name{
+    color: #5d4f5c;
+    font-size: 22px;
+    line-height: 54px;
+    text-align: center;
+}
+.list-item .txt{
+    color: #777;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+.list-item .txt.intro{
+    /*text-align: left;*/
+}
+@media screen and (max-width: 768px){
+    .list-item{
+        width: 46%;
+        height: 351px;
+        overflow: hidden;
+        display: inline-block;
+        padding: 10px 8px 15px;
+        background-color: #dad3db;
+        border: 1px solid #b19592;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 2%;
+        float: left;
+    }
+    .img-border{
+        width: 90%;
+        height: 90%;
+        /*min-height: 100px;*/
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .img-border img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+}

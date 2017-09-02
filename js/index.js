@@ -1,3 +1,4 @@
+getHeader();
 
 var scope = {
     height: $(window).height(),
@@ -138,4 +139,5 @@ $(function () {
     xueba_slide_init();
     bind_event();
     lazy();
+    getFooter(true);
 })
