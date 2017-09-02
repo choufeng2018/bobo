@@ -37,6 +37,10 @@
 
             elements.each(function() {
                 var $this = $(this);
+                if($this.attr("src") != settings.placeholder){
+                    return;
+                // 新增 陈宝俊
+                }
                 if (settings.skip_invisible && !$this.is(":visible")) {
                     return;
                 }
