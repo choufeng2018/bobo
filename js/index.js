@@ -60,7 +60,9 @@ $(function () {
         $(".cover").find("img").css({height: scope.height});
 
         $(".play-box").css({"margin-top": (scope.height - 480)/2 +"px"})
-
+        if(scope.width <= 1366){
+            $(".play-box").css({"margin-top": (scope.height - 400)/2 +"px"})
+        }
     }
 
     var xueba_slide_init = function () {

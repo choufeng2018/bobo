@@ -38,10 +38,20 @@ var getHeader = function (page) {
         '        </div>\n' +
         '    </div>'
 
+    var btn = '<span class="menu-btn"></span>'
 
-
-    $("header").html(head);
+    $("header").html(btn + head);
     $("."+page).addClass("current");
+
+    $(".menu-btn").on("click",function () {
+        var link = $(".link-box");
+        if(link.hasClass("show")){
+            link.slideUp(400).removeClass("show");
+            return;
+        }
+        link.slideDown(400).addClass("show")
+
+    })
 }
 
 

@@ -11,7 +11,6 @@ header{
     background: url("../resource/daka/banner.png") no-repeat center;
     background-size: cover;
 }
-
 /*=======================tab=====================*/
 .tab{
     width: 100%;
@@ -70,6 +69,34 @@ header{
 .tb-r{
     float: right;
     margin-right: 40px;
+}
+@media screen and (max-width: 1366px){
+    .banner{
+        height: 470px;
+    }
+    .tab{
+        height: 110px;
+    }
+    .tab .inner{
+        height: 110px;
+        width: 70%;
+        margin: auto;
+    }
+    .tab-btn{
+        height: 110px;
+    }
+    .tab-name{
+        font-size: 26px;
+        line-height: 36px;
+        margin-top: 22px;
+    }
+    .tb-l{
+        margin-left: 40px;
+    }
+    .tb-r{
+        float: right;
+        margin-right: 40px;
+    }
 }
 @media screen and (max-width: 768px){
     .banner{

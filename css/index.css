@@ -68,7 +68,18 @@ html, body {
     float: left;
     margin-right: 15px;
 }
-
+@media screen and (max-width: 1366px){
+    .two_left .inner{
+        margin-top: 35%;
+    }
+    .two-left-slide{
+        margin-top: 40px;
+        cursor: pointer;
+    }
+    .li-2{
+        margin-top: 50px;
+    }
+}
 /**/
 .two_right{
     width: 60%;
@@ -203,7 +214,30 @@ html, body {
     display: none;
 }
 
-
+@media screen and (max-width: 1366px){
+    .xueba{
+        margin: 2% 2% 0;
+    }
+    .four-left{
+        margin-top: 18%;
+    }
+    .xueba .lazy-box{
+        width: 80%;
+        /*min-width: 250px;*/
+        height: 200px;
+        /*overflow: hidden;*/
+    }
+    .xueba p.name{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .xueba p.intro{
+        font-size: 14px;
+    }
+    .xueba .lazy-box img{
+        width: 80%;
+    }
+}
 
 /*===========================slide5==============================*/
 .slide-slide5{
@@ -242,6 +276,9 @@ html, body {
     box-shadow: 2px 2px 5px #999;
     border: 1px solid #e0e0e0;
     transition: background 0.5s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .icons:hover{
     background-color: #F4B81A;
@@ -297,7 +334,39 @@ html, body {
     background-position: -188px -62px;
 }
 
-
+@media screen and (max-width: 1366px){
+    .five_top .top-t{
+        margin: 8% auto 10px;
+        font-size: 24px;
+    }
+    .five-bt{
+        margin-top: 20px;
+    }
+    .icons{
+        width: 23%;
+        min-width: 0;
+        min-height: 280px;
+        margin: 0 2% 0 0;
+        border-radius: 10px;
+    }
+    .icons .ic-txt{
+        padding: 0 15px;
+        line-height: 30px;
+        font-size: 20px;
+        color: #515151;
+        text-align: center;
+        transition: color 0.5s;
+    }
+    .icons .bg-ic{
+        background-image: url("../resource/index/icons.png");
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 64px;
+        display: block;
+        margin: 30px auto 20px;
+        transition: background 0.5s;
+    }
+}
 /*=========================================slide6=================================*/
 .six_top{
     margin-top: 14%;
@@ -429,7 +498,25 @@ html, body {
 .map img{
     width: 100%;
 }
-
+@media screen and (max-width: 1366px){
+    .six_top{
+        margin-top: 6%;
+    }
+    .code{
+        margin: 30px 0 0;
+    }
+    .code .ss-1{
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .code .ss-2 a{
+        font-size: 16px;
+    }
+    .code-img img{
+        width: 90px;
+        height: 90px;
+    }
+}
 /*=======================*/
 footer{
     position: absolute;
