@@ -63,6 +63,9 @@ $(function () {
         if(scope.width <= 1366){
             $(".play-box").css({"margin-top": (scope.height - 400)/2 +"px"})
         }
+        if(scope.width <= 768){
+            $(".play-box").css({"margin-top": "20px"})
+        }
     }
 
     var xueba_slide_init = function () {

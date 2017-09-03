@@ -18,6 +18,11 @@ var scope = {
     videolist:[
         {type: "wenxue",list: [
             {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
+            {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
+            {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
+            {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
+            {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
+            {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
             /*{name: "刘安妮",img:"中国人民大学",major:"国学",v_name:"临风鉴月说国学",link:"https://st.h5.xiaoe-tech.com/st/0WkgYw8AH"},
             {name: "杨慧玲",img:"中国传媒大学",major:"广告学",v_name:"脑洞学，欢迎您",link:"https://st.h5.xiaoe-tech.com/st/7I96T27lM"},
             {name: "刘安妮",img:"中国人民大学",major:"国学",v_name:"临风鉴月说国学",link:"1SFAq1V4H"},
@@ -111,6 +116,14 @@ $(function () {
             $("#"+ id).removeClass("hide").siblings().addClass("hide")
             lazy();
         })
+
+        window.addEventListener("resize",function () {
+            var img = $("#firstBox");
+            if(img.attr("src")){
+                var v_height = img.height();
+                $(".img-box").css({'height': v_height});
+            }
+        })
     }
 
 
@@ -132,7 +145,10 @@ $(function () {
             var v_height = img.height();
             $(".img-box").css({'height': v_height});
         }
-    },1000)
+    },100)
 
 
 })
+window.onload = function () {
+    console.log("hahahahah")
+}
