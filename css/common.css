@@ -215,7 +215,7 @@ footer{
     font-size: 14px;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 768px){
     .ft-form{
         padding: 8px 0 5px;
         width: auto;

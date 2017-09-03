@@ -127,25 +127,26 @@ $(function () {
     }
 
 
-
+    // var isLoaded = false;
+    // var in_id = setInterval(function () {
+    //     console.log(isLoaded)
+    //     if(isLoaded){
+    //         clearInterval(in_id);
+    //     }
+    //     var img = $("#firstBox");
+    //     if(img.attr("src")){
+    //         isLoaded = true;
+    //         var v_height = img.height();
+    //         console.log(v_height)
+    //         $(".img-box").css({'height': v_height});
+    //     }
+    // },100) // lazy图片灰色背景是正方形。。。
     show_videos();
     bind_event();
     getFooter();
     lazy();
 
-    var isLoaded = false;
-    var in_id = setInterval(function () {
-        console.log(isLoaded)
-        if(isLoaded){
-            clearInterval(in_id);
-        }
-        var img = $("#firstBox");
-        if(img.attr("src")){
-            isLoaded = true;
-            var v_height = img.height();
-            $(".img-box").css({'height': v_height});
-        }
-    },100)
+
 
 
 })
