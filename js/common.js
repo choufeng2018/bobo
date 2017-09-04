@@ -70,7 +70,7 @@ var getFooter = function (ismap) {
         '                </div>'
 
     foot = '<div class="foot">\n' +
-        '                    <form class="ft-form" action="#" method="post" onsubmit="return check_form();">\n' +
+        '                    <form class="ft-form" action="../email.php" method="post" onsubmit="return check_form();">\n' +
         '                        <label>体验课程</label>\n' +
         '                        <input id="ft-name" class="ft-input" type="text" name="name" placeholder="姓名">\n' +
         '                        <input id="ft-phone" class="ft-input" type="text" name="phone" placeholder="手机号">\n' +
