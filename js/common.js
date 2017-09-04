@@ -45,6 +45,7 @@ var getHeader = function (page) {
 
     $(".menu-btn").on("click",function () {
         var link = $(".link-box");
+        // link.css("margin-top","-2px")
         if(link.hasClass("show")){
             link.slideUp(400).removeClass("show");
             return;
@@ -56,9 +57,16 @@ var getHeader = function (page) {
 
 
 var getFooter = function (ismap) {
+
+    var isAbout = location.pathname.indexOf("about") <= -1 ? false : true;
+    var map_path = 'resource/index/index_png_24_08.png';
+    if(isAbout){
+        map_path = '../resource/index/index_png_24_08.png'
+    }
+
     var foot = '';
     var map = '<div class="map">\n' +
-        '                    <a href="http://ditu.amap.com/place/B0FFG717BZ" target="_blank"><img src="resource/index/index_png_24_08.png"></a>\n' +
+        '                    <a href="http://ditu.amap.com/place/B0FFG717BZ" target="_blank"><img class="lazy" src="'+ map_path +'"></a>\n' +
         '                </div>'
 
     foot = '<div class="foot">\n' +

@@ -1,0 +1,311 @@
+header{
+    background-color: rgba(226,110,25,0.4);
+}
+.logo-box a{
+    background-position: 0 -42px;
+}
+.banner{
+    width: 100%;
+    /*height: 892px;*/
+    height: 960px;
+    background: url("../resource/about/about_01.png") no-repeat bottom center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1366px){
+    .banner{
+        height: 710px;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner{
+        height: 250px;
+    }
+}
+
+
+/*=================ABOUT US==============*/
+.about-us{
+    position: relative;
+}
+.img-box{
+    margin-top: 40px;
+    text-align: center;
+    color: #b6b6b6;
+    /*font-size: 146px;*/
+    font-size: 126px;
+
+    font-weight: bolder;
+    letter-spacing: 20px;
+    font-family: "Microsoft YaHei","Microsoft Sans Serif ";
+    text-shadow: 2px 2px 2px #fff;
+    position: relative;
+    z-index: 99;
+}
+.img-box img{
+    width: 854px;
+}
+.about-left{
+    width: 45%;
+    float: left;
+    color: #a8a8a8;
+}
+.line-tit{
+    font-size: 16px;
+    margin: 50px 20px;
+}
+.line-txt{
+    /*font-size: 30px;*/
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 0 120px;
+    letter-spacing: 5px;
+}
+.about-main{
+    position: relative;
+    /*min-height: 500px;*/
+}
+.about-right{
+    width: 60%;
+    float: right;
+    background-color: rgba(182,182,182,0.3);
+    /*background-color: #f3f2f1;*/
+    /*padding: 174px 40px 25px 50px;*/
+    color: #666;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: justify;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 9;
+}
+.about-right .inner{
+    margin: 174px 40px 25px 50px;
+}
+
+@media screen and (max-width: 768px){
+    .img-box{
+        margin-top: 30px;
+        font-size: 40px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 2px #666;
+    }
+    .img-box img{
+        width: 854px;
+    }
+    .about-left{
+        width: 100%;
+        float: left;
+    }
+    .line-tit{
+        font-size: 16px;
+        margin: 20px 20px;
+        letter-spacing: 0;
+    }
+    .line-txt{
+        /*font-size: 30px;*/
+        font-size: 24px;
+        /*margin: 20px 0 0 120px;*/
+        margin: 0;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    .about-main{
+        position: relative;
+        /*min-height: 500px;*/
+    }
+    .about-right{
+        width: 100%;
+        float: right;
+        background-color: rgba(182,182,182,0.3);
+        /*padding: 174px 40px 25px 50px;*/
+        color: #666;
+        line-height: 24px;
+        letter-spacing: 0px;
+        font-size: 16px;
+        position: inherit;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        margin: 15px 0;
+    }
+    .about-right .inner{
+        margin: 20px 15px;
+    }
+}
+
+
+/*=======================contact us===================*/
+.contact-main{
+    color: #3a4a7a;
+    position: relative;
+    letter-spacing: 2px;
+}
+.cont-left{
+    background-color: rgba(182,182,182,0.3);
+    width: 60%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: 9;
+}
+.cont-left .line-txt{
+    color: #3a4a7a;
+
+}
+.line-cont-1{
+    margin-top: 80px;
+}
+.line-cont{
+    font-size: 24px;
+    color: #3a4a7a;
+    line-height: 30px;
+    margin-left: 76px;
+}
+.cont-left .inner{
+    margin: 100px 40px 25px 50px;
+}
+
+
+.cont-right{
+    width: 43%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 5%;
+    text-align: justify;
+}
+.cont-right p{
+    line-height: 24px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px){
+    .contact-main{
+        position: relative;
+    }
+    .cont-left{
+        background-color: transparent;
+        width: 100%;
+        position: inherit;
+        top: 0px;
+        left: 0;
+        z-index: 9;
+    }
+    .cont-left .line-txt{
+        color: #3a4a7a;
+    }
+    .line-cont-1{
+        margin-top: 10px;
+    }
+    .line-cont{
+        font-size: 18px;
+        color: #3a4a7a;
+        line-height: 24px;
+        margin-left: 6px;
+        text-align: center;
+    }
+    .cont-left .inner{
+        margin: 10px 40px 25px 10px;
+    }
+
+    .cont-right{
+        background-color: rgba(182,182,182,0.3);
+        width: 100%;
+        float: right;
+        margin-top: 0px;
+        margin-right: 0;
+        text-align: justify;
+        padding: 15px 0;
+    }
+    .cont-right p{
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        margin:  0 10px;
+    }
+}
+
+/*============================*/
+.cont-info{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+.left-info{
+    /*width: 430px;*/
+    width: 46%;
+    float: left;
+    text-align: justify;
+}
+.contact{
+    font-size: 22px;
+    color: #5b646e;
+    margin-top: 25px;
+    padding-left: 40px;
+    line-height: 25px;
+}
+.contact.c-1{
+    background: url("../resource/index/index_5__39.png") no-repeat left top;
+}
+.contact.c-2{
+    background: url("../resource/index/index_5__44.png") no-repeat left top;
+}
+.contact.c-3{
+    background: url("../resource/index/index_5__47.png") no-repeat left top;
+}
+
+.right-info{
+    float: right;
+    letter-spacing: 2px;
+}
+.right-info .code-box{
+    text-align: center;
+    display: inline-block;
+    margin-top: 40px;
+}
+.right-info .code-box span{
+    line-height: 30px;
+}
+.code-2{
+    margin-right: 20px;
+    margin-left: 100px;
+}
+@media screen and (max-width: 768px){
+    .cont-info{
+        margin-bottom: 20px;
+        letter-spacing: 0px;
+    }
+    .left-info{
+        /*width: 430px;*/
+        width: 94%;
+        margin: auto;
+        float: none;
+        text-align: justify;
+    }
+    .contact{
+        font-size: 16px;
+        margin-top: 5px;
+        padding-left: 35px;
+        line-height: 25px;
+    }
+
+    .right-info{
+        float: none;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .right-info .code-box{
+        text-align: center;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .right-info .code-box span{
+        line-height: 30px;
+    }
+    .code-2{
+        margin-right: 0;
+        margin-left: 20%;
+    }
+}

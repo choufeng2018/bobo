@@ -182,6 +182,12 @@ header{
     .video-info{
         font-size: 14px;
         line-height: 20px;
+        margin-bottom: 5px;
+        word-break:break-all;
+        display:-webkit-box;
+        -webkit-line-clamp:2;
+        -webkit-box-orient:vertical;
+        overflow:hidden;
     }
     .play-icon img{
         position: absolute;
