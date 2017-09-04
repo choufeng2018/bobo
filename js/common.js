@@ -70,10 +70,10 @@ var getFooter = function (ismap) {
         '                </div>'
 
     foot = '<div class="foot">\n' +
-        '                    <form class="ft-form" action="#" method="post" onsubmit="return false;">\n' +
+        '                    <form class="ft-form" action="#" method="post" onsubmit="return check_form();">\n' +
         '                        <label>体验课程</label>\n' +
-        '                        <input class="ft-input" type="text" name="name" value="姓名">\n' +
-        '                        <input class="ft-input" type="text" name="phone" value="手机号">\n' +
+        '                        <input id="ft-name" class="ft-input" type="text" name="name" placeholder="姓名">\n' +
+        '                        <input id="ft-phone" class="ft-input" type="text" name="phone" placeholder="手机号">\n' +
         '                        <input class="submit" type="submit" value="立即预约">\n' +
         '                    </form>\n' +
         '                    <div class="copy">\n' +
@@ -85,5 +85,24 @@ var getFooter = function (ismap) {
     if(ismap){
         foot = map + foot;
     }
-    $("footer").html(foot)
+    $("footer").html(foot);
+}
+
+function check_form() {
+    var bl = true;
+
+    var o_name = $("#ft-name"), o_phone = $("#ft-phone");
+    if(o_name.val() == ""){
+        o_name.css("border-color","#d35858");
+        bl = false;
+    }else{
+        o_name.css("border-color","white");
+    }
+    if(o_phone.val() == ""){
+        o_phone.css("border-color","#d35858");
+        bl = false;
+    }else{
+        o_phone.css("border-color","white");
+    }
+    return bl;
 }

@@ -91,6 +91,9 @@ $(function () {
             $(this).addClass("active").css({"padding":"25px 0 34px"});
             $(this).next(".menu").css({"padding":"16px 0 25px"})
 
+            //回顶
+            $("body").animate({scrollTop: $(".right-cont").offset().top - 80 }, {duration: 500,easing: "swing"});
+
             var id = $(this).data("to");
             $("#"+ id).removeClass("hide").siblings().addClass("hide")
             lazy();
