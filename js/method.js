@@ -9,16 +9,23 @@ var scope = {
     ],
     videolist:[
         {type: "kemu",list: [
-            {name: "唐定耀",img:"唐定耀+对外汉语专业.jpg",code:"唐定耀—汉语国际教育专业.jpeg",major:"汉语言国际教育",v_name:"汉语言国际教育专业",link:"https://st.h5.xiaoe-tech.com/st/1SFAq1V4H"},
-            {name: "刘安妮",img:"刘安妮+国学+临风鉴月说国学.png",code:'刘安妮—临风鉴月说国学.jpeg',major:"国学",v_name:"临风鉴月说国学",link:"https://st.h5.xiaoe-tech.com/st/0WkgYw8AH"},
-            {name: "杨慧玲",img:"杨慧玲+广告学+脑同学欢迎您.png",code:'杨慧玲—脑洞学，欢迎你.jpeg',major:"广告学",v_name:"脑洞学，欢迎您",link:"https://st.h5.xiaoe-tech.com/st/7I96T27lM"},
+            {name: "程明皓",img:"程明皓  套用公式就能写出满分作文.jpg",code:"二维码",v_name:"套用“公式”就能写出满分作文",link:"http://t.cn/RCwYwb7"},
+            {name: "张云翼",img:"张云翼  没有最强大脑一样玩转生物.jpg",code:"二维码",v_name:"没有最强大脑一样玩转生物",link:"http://t.cn/RCwjijM"},
+            {name: "姓名",img:"海报图片",code:"二维码",v_name:"视频描述",link:"hSFAq1V4H"},
 
         ]},
         {type: "jingyan",list: [
-            {name: "宋佳颐",img:"宋佳颐+生物技术+破译生命密码.jpg",code:"宋佳颐—破译生命密码.jpeg",major:"生物技术",v_name:"破译生命密码",link:"https://st.h5.xiaoe-tech.com/st/9TGaTBWGL"},
-            {name: "宋佳颐",img:"宋佳颐生物技术破译生命密码jpg",code:"宋佳颐破译生命密码jpeg",major:"生物技术",v_name:"破译生命密码",link:"https"},
+            {name: "姓名",img:"海报图片",code:"二维码",v_name:"视频描述",link:"hSFAq1V4H"},
+
         ]},
-        // {type: "lixue",list: []},
+        {type: "xinli",list: [
+            {name: "姓名",img:"海报图片",code:"二维码",v_name:"视频描述",link:"hSFAq1V4H"},
+
+        ]},
+        {type: "jiazhang",list: [
+            {name: "姓名",img:"海报图片",code:"二维码",v_name:"视频描述",link:"hSFAq1V4H"},
+
+        ]},
     ]
 }
 
@@ -60,7 +67,7 @@ $(function () {
                     link_a = '<a class="play-icon" href="javascript:void(0);"><img src="../resource/major/play_btn_04.png"></a>';
                     code_html = '<div class="cover">\n' +
                         '                        <div class="code-box">\n' +
-                        '                            <img class="lazy code-img" data-original="../resource/major/'+ t.code +'">\n' +
+                        '                            <img class="lazy code-img" data-original="../resource/method/videopic/'+ t.code +'">\n' +
                         '                            <span class="info">扫码即可播放</span>\n' +
                         '                        </div>\n' +
                         '                    </div>'
@@ -71,10 +78,10 @@ $(function () {
 
                 html += '<div class="video">\n' +
                     '                <div class="img-box">\n' +
-                    '                    <img class="lazy video-img" data-original="../resource/major/'+ t.img +'">\n' +
+                    '                    <img class="lazy video-img" data-original="../resource/method/videopic/'+ t.img +'">\n' +
                     link_a + code_html +
                     '                </div>\n' +
-                    '                <p class="video-info">'+ t.major + "—" + t.v_name +'</p>\n' +
+                    '                <p class="video-info">'+ t.name + "—" + t.v_name +'</p>\n' +
                     '            </div>'
             })
 
