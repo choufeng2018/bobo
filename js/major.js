@@ -249,10 +249,6 @@ $(function () {
             var v_height = img.height();
             // console.log(v_height)
             $(".img-box").css({'height': v_height});
-
-            // var video_height = img.parent().parent().height();
-            // console.log(video_height)
-            // $(".video").css("height",video_height)
         }
     },100) // lazy图片灰色背景是正方形。。。
 

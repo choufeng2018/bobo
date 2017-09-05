@@ -5,6 +5,21 @@ var scope = {
     width: $(window).width()
 }
 
+// 检测设备屏幕 调整首屏轮播
+if(scope.width <= 768){
+    var mbanner = ["mbanner_1.jpg","mbanner_2.jpg","mbanner_3.jpg"];
+    var html = ""
+    $.each(mbanner,function (i, v) {
+        html += '<div class="swiper-slide">\n' +
+            '                            <div class="cover">\n' +
+            '                                <img src="resource/index/'+ v +'">\n' +
+            '                            </div>\n' +
+            '                        </div>'
+    })
+
+    $(".swiper-carousel .swiper-wrapper").html(html);
+}
+
 var swiper = new Swiper('.swiper-all', {
     pagination: '.all-page',
     paginationClickable: true,
@@ -17,6 +32,7 @@ var swiper = new Swiper('.swiper-all', {
     speed:600,
     mousewheelControl: true,
     keyboardControl : true,
+    // slidesOffsetAfter : 200, // 设置最后一屏留空
     onScroll: function (swiper) {
 
     },
@@ -71,16 +87,16 @@ $(function () {
     var xueba_slide_init = function () {
         var xueba_list = [
             {list: [
-                {id:1,img: "group_1.1.jpeg",name:"张云翼",intro: "清华大学 土木工程专业",detail:""},
-                {id:2,img: "group_1.2.jpeg",name:"徐婧",intro: "北京大学  法学专业",detail:""},
+                {id:1,img: "group_1.1.jpg",name:"张云翼",intro: "清华大学 土木工程专业",detail:""},
+                {id:2,img: "group_1.2.jpg",name:"徐婧",intro: "北京大学  法学专业",detail:""},
                 {id:3,img: "group_1.3.jpg",name:"王子娇",intro: "中国人民大学  贸易经济专业",detail:""},
                 {id:4,img: "group_1.4.jpg",name:"沙梦吟",intro: "南开大学  生物科学专业",detail:""}
             ]},
             {list: [
-                {id:1,img: "group_2.1.jpeg",name:"邱飞旸",intro: "清华大学 工业工程专业",detail:""},
+                {id:1,img: "group_2.1.jpg",name:"邱飞旸",intro: "清华大学 工业工程专业",detail:""},
                 {id:2,img: "group_2.2.jpg",name:"王怡汀",intro: "中国农业大学  食品工程专业",detail:""},
                 {id:3,img: "group_2.3.jpg",name:"鹿飞宇",intro: "北京师范大学 心理学专业",detail:""},
-                {id:4,img: "group_2.4.jpeg",name:"唐子玉",intro: "中国人民大学  人力资源专业",detail:""}
+                {id:4,img: "group_2.4.jpg",name:"唐子玉",intro: "中国人民大学  人力资源专业",detail:""}
             ]},
             {list: [
                 {id:1,img: "group_3.1.jpg",name:"王君",intro: "中国人民大学  金融学专业",detail:""},
@@ -125,14 +141,59 @@ $(function () {
         });
     }
 
+    var show_video = function (config) {
+        $(".video-box").fadeIn(400)
+
+        // var v = document.getElementById(config.id)
+        // v.play();
+
+        $("."+config.id).find("video").get(0).play();
+    }
+    var pause = function () {
+        // var v1 = document.getElementById("my-video-1");
+        // var v2 = document.getElementById("my-video-2");
+        //
+        // v1.pause();
+        // v2.pause();
+
+        $(".box-1").find("video").get(0).pause();
+        $(".box-2").find("video").get(0).pause();
+    }
+
+
     var bind_event = function () {
         $(".two-left-slide .li-1").on("click mouseover",function () {
             $(".v-li-1").removeClass("hide");
             $(".v-li-2").addClass("hide");
+
         })
         $(".two-left-slide .li-2").on("click mouseover",function () {
             $(".v-li-2").removeClass("hide");
             $(".v-li-1").addClass("hide");
+
+        })
+
+        $(".v-li-1").on("click",function () {
+            $(".box-1").css("display","inline-block")
+            $(".box-2").css("display","none")
+
+            show_video({id:"box-1"});
+
+        })
+
+        $(".v-li-2").on("click",function () {
+            $(".box-2").css("display","inline-block")
+            $(".box-1").css("display","none")
+
+            show_video({id:"box-2"});
+
+        })
+
+
+        // 关闭
+        $(".close").on("click",function () {
+            $(".video-box").fadeOut(400)
+            pause();
         })
     }
 

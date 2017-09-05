@@ -17,6 +17,49 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="css/functional.css">
+    <script src="js/flowplayer.min.js"></script>
+    <style>
+        .flowplayer .fp-fullscreen{
+            right: 50px;
+        }
+        .flowplayer {
+            width: 80%;
+            background: #333;
+        }
+        .video-box{
+            position: absolute;
+            padding-top: 8%;
+            width: 76%;
+            height: 100%;
+            background: #fff;
+            text-align: center;
+        }
+        .close{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: rgba(0,0,0,.65) url("resource/index/close.png") no-repeat center;
+            background-size: 45%;
+            position: absolute;
+            z-index: 999;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px){
+            .flowplayer {
+                width: 100%;
+            }
+            .video-box{
+
+                padding-top: 100px;
+                width: 100%;
+
+            }
+        }
+    </style>
+
 </head>
 <body>
 <header>
@@ -74,27 +117,54 @@
                 <div class="two_right ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                     <div class="inner">
                         <div class="play-box v-li-1">
-                            <!--<video controls class="my-video">-->
-                                <!--<source src="resource/index/video.mpg" type="video/mpg">-->
-                                <!--<object>-->
-                                    <!--<embed src="resource/index/video.mpg" width="320" height="240" />-->
-                                <!--</object>-->
-                            <!--</video>-->
-                            <!--<a class="play"></a>-->
                         </div>
                         <div class="play-box hide v-li-2">
-
                         </div>
-
+                    </div>
+                </div>
+                <div class="video-box hide">
+                    <!--视频-->
+                    <div class="flowplayer box-1" data-ratio="0.4167">
+                        <span class="close"></span>
+                        <video class="video-hide" id="my-video-1">
+                            <source type="video/mp4" src="resource/index/major.mp4">
+                        </video>
+                    </div>
+                    <div class="flowplayer box-2" data-ratio="0.4167">
+                        <span class="close"></span>
+                        <video class="video-hide" id="my-video-2">
+                            <source type="video/mp4" src="resource/index/method.mp4">
+                        </video>
                     </div>
                 </div>
             </div>
         </div>
         <div class="swiper-slide slide-slide3" data-hash="slide3">
-            <div class="index_three">
+            <div class="index_three bb-width">
+                <div class="three_item item1">
+                    <div class="img-bg"></div>
+                    <p>985高校学霸</p>
+                </div>
+                <div class="three_item item2">
+                    <div class="img-bg"></div>
+                    <p>视频介绍</p>
+                </div>
+                <div class="three_item item3">
+                    <div class="img-bg"></div>
+                    <p>文字解读</p>
+                </div>
+                <div class="three_item item4">
+                    <div class="img-bg"></div>
+                    <p>个性化问答</p>
+                </div>
 
-                <p><b class="yellow">985高校学霸+</b><b class="blue">视频介绍</b><b class="yellow">+文字解读+</b><b class="blue">个性化问答</b></p>
-                <a class="slide3-link" href="javascript:void(0);"></a>
+
+               <!-- <p><b class="yellow">985高校学霸+</b>
+                    <b class="blue">视频介绍</b>
+                    <b class="yellow">+文字解读+</b>
+                    <b class="blue">个性化问答</b></p>-->
+
+
             </div>
         </div>
         <div class="swiper-slide slide-slide4" data-hash="slide4">
@@ -148,20 +218,18 @@
                     <div class="code clear">
                         <div class="code-left">
                         <p class="ss-1">扫一扫订阅学霸播播</p>
-                        <p class="ss-2"><a href="javascript:;">点击下载</a></p>
                         </div>
                         <div class="code-img">
-                            <span class="trig"></span>
+                            <!--<span class="trig"></span>-->
                             <img src="resource/index/index_png_24_03.jpg">
                         </div>
                     </div>
                     <div class="code clear">
                         <div class="code-left">
                         <p class="ss-1">扫一扫享受学霸服务</p>
-                        <p class="ss-2"><a href="javascript:;">点击下载</a></p>
                         </div>
                         <div class="code-img">
-                            <span class="trig"></span>
+                            <!--<span class="trig"></span>-->
                             <img src="resource/index/index_png_24_06.jpg">
                         </div>
                     </div>
