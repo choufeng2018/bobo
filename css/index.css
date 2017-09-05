@@ -211,10 +211,7 @@ html, body {
 .index_three{
     text-align: center;
     margin-top: 16%;
-    font-size: 30px;
     font-weight: bolder;
-    text-shadow: 2px 2px 2px #999;
-    letter-spacing: 5px;
     /*-webkit-text-stroke: 2px #fff;*/
 }
 
@@ -227,33 +224,89 @@ html, body {
     border-radius: 5px;
     box-shadow: 0 0 15px #666;
     height: 320px;
+    transition: background-color,color 0.5s;
+    color: #777;
+}
+.three_item:hover{
+    background-color: #F4B81A;
+    color: #fff;
 }
 .three_item p{
-    color: #555;
+
+    font-size: 30px;
     margin: 0 0 30px 0;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px #aaa;
 }
 .three_item .img-bg{
-    width: 92px;
+    width: 96px;
     height: 96px;
     margin: 35px auto 50px;
 }
-.index_three .item1 .img-bg{
+.three_item.item1 .img-bg{
     background: url("../resource/index/ico_12.png") no-repeat center;
 }
-.index_three .item2 .img-bg{
+.three_item.item2 .img-bg{
     background: url("../resource/index/ico_22.png") no-repeat center;
 }
-.index_three .item3 .img-bg{
+.three_item.item3 .img-bg{
     background: url("../resource/index/ico_32.png") no-repeat center;
 }
-.index_three .item4 .img-bg{
+.three_item.item4 .img-bg{
     background: url("../resource/index/ico_42.png") no-repeat center;
 }
+
+.three_item.item1:hover  .img-bg{
+    background: url("../resource/index/ico_11.png") no-repeat center;
+}
+.three_item.item2:hover  .img-bg{
+    background: url("../resource/index/ico_21.png") no-repeat center;
+}
+.three_item.item3:hover .img-bg{
+    background: url("../resource/index/ico_31.png") no-repeat center;
+}
+.three_item.item4:hover .img-bg{
+    background: url("../resource/index/ico_41.png") no-repeat center;
+}
+
 .index_three .three_item .img-bg{
     background-size: 100%;
 }
+.index_three .three_item:hover .img-bg{
+    background-size: 100%;
+}
+@media screen and (max-width: 768px){
+    .index_three{
+        text-align: center;
+        margin-top: 100px;
+        font-weight: bolder;
+        /*-webkit-text-stroke: 2px #fff;*/
+    }
 
-
+    .three_item {
+        display: inline-block;
+        width: 46%;
+        float: left;
+        margin-right: 0;
+        border-radius: 0;
+        box-shadow: 0 0 5px #666;
+        height: 220px;
+    }
+    .three_item p{
+        font-size: 18px;
+        margin: 0 0 30px 0;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 2px #ccc;
+    }
+    .three_item .img-bg{
+        width: 64px;
+        height: 64px;
+        margin: 35px auto 35px;
+    }
+    .item1,.item3{
+        margin-left: 4%;
+    }
+}
 /*==========================slide4=============================*/
 .four-left{
     margin-top: 20%;
