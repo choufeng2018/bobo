@@ -162,9 +162,22 @@ html, body {
     height: 64px;
 }
 
+.two_right .slide-t{
+    display: none;
+    text-align: center;
+}
+.two_right .slide-t img{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
 
 
 @media screen  and (max-width: 768px){
+    .two_right .slide-t{
+        display: block;
+    }
     .two_right{
         width: 100%;
         float: left;
@@ -174,7 +187,7 @@ html, body {
         position: relative;
         width: 100%;
         height: auto;
-        margin-top: 15%;
+        margin-top: 10%;
     }
 
     .play-box{
@@ -193,16 +206,17 @@ html, body {
     .v-li-1{
         background: url("../resource/index/mac_1_03.png") no-repeat top center;
         background-size: contain;
+        margin-bottom: 1em;
     }
     .v-li-1:after{
-        content: "跟我来，不入坑";
+        /*content: "跟我来，不入坑";*/
     }
     .v-li-2{
         background: url("../resource/index/mac_2_03.png") no-repeat top center;
         background-size: contain;
     }
     .v-li-2:after{
-        content: "学霸归来 拯救不开心";
+        /*content: "学霸归来 拯救不开心";*/
     }
     .my-video{
         width: 76%;
