@@ -61,7 +61,7 @@ var carouselSwiper = new Swiper('.swiper-carousel', {
     nextButton:'.swiper-button-next',
     loop: true,
     onSlideChangeEnd: function () {
-        lazy();
+        // lazy();
     }
 });
 
@@ -128,7 +128,7 @@ $(function () {
         $(".four-swiper .swiper-wrapper").html(html)
 
         var xuebaSlide = new Swiper('.four-swiper', {
-            // autoplay: 5000,//可选选项，自动滑动
+            autoplay: 3000,//可选选项，自动滑动
             autoplayDisableOnInteraction : false,
             pagination: '.slide4-page',
             paginationClickable :true,
@@ -136,7 +136,7 @@ $(function () {
             keyboardControl : true,
             loop: true,
             onSlideChangeEnd: function () {
-                lazy();
+                // lazy();
             }
         });
     }
