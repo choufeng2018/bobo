@@ -114,7 +114,7 @@ $(function () {
             $.each(v.list,function (j, t) {
                 xueba_html += '<div class="xueba">\n' +
                     '                                <div class="lazy-box">\n' +
-                    '                                    <img class="lazy" data-original="resource/index/'+ t.img +'">\n' +
+                    '                                    <img src="resource/index/'+ t.img +'">\n' +
                     '                                    <div class="detail">'+ t.detail +'</div>\n' +
                     '                                </div>\n' +
                     '                                <p class="name">'+ t.name +'</p>\n' +
