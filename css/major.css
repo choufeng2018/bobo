@@ -63,6 +63,12 @@ header{
     color: #2C7FD4;
 }
 @media screen and (max-width: 768px){
+    .menu .cir{
+        background: none;
+    }
+    .menu.active .cir{
+        background: none;
+    }
     .menu-title{
         font-size: 16px;
         padding: 20px 0 20px;
@@ -73,7 +79,7 @@ header{
     }
     .menu .cir{
         margin-left: 5px;
-        padding-left: 20px;
+        padding-left: 5px;
     }
 }
 /*================right-cont==============*/

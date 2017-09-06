@@ -135,7 +135,7 @@ header{
         margin: 20px 15px;
     }
     .about-right .inner p{
-        text-indent: 2em;
+        margin: 5px 0;
     }
 }
 
@@ -226,8 +226,7 @@ header{
         line-height: 24px;
         font-size: 16px;
         letter-spacing: 0px;
-        margin:  0 10px;
-        text-indent: 2em;
+        margin: 5px 10px;
     }
 }
 
@@ -312,7 +311,7 @@ header{
         margin-right: 0;
         margin-left: 20%;
     }
-}
-.map img {
-    width: 150%;
+    .map img {
+        width: 150%;
+    }
 }

@@ -84,7 +84,8 @@ var getFooter = function (ismap) {
         '                        <input class="submit" type="submit" value="立即预约">\n' +
         '                    </form>\n' +
         '                    <div class="copy">\n' +
-        '                        <p>版权所有&copy;学霸播播 北京历说教育科技有限公司&nbsp;&nbsp;京ICP备16056024号-1</p>\n' +
+        '                        <p>版权所有&copy;学霸播播 北京历说教育科技有限公司</p>\n' +
+        '                        <p>京ICP备16056024号-1</p>\n' +
         '                        <p>技术支持：<a href="http://www.qiniuniu.com/" target="_blank"><img style="vertical-align: middle" src="'+ qiniuniu +'"></a></p>\n' +
         '                    </div>\n' +
         '                </div>'
