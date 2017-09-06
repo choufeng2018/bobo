@@ -831,4 +831,46 @@ footer{
     .map img {
         width: 150%;
     }
+
+}
+@media screen and (max-width: 768px){
+    .ft-form{
+        padding: 8px 0 5px;
+        width: auto;
+        margin: auto;
+        clear: both;
+        overflow: hidden;
+    }
+    .ft-input{
+        padding: 5px 10px;
+        width: 50%;
+        float: left;
+        border-radius: 4px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    .ft-form label{
+        font-size: 16px;
+        float: none;
+        margin-right: 19px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0 12px;
+        display: inline-block;
+        height: 30px;
+    }
+    .ft-form .submit{
+        display: inline;
+        width: auto;
+        padding: 4px 12px;
+        float: left;
+        border-radius: 4px;
+        font-size: 16px;
+        margin: 0 0 0 22px;
+    }
+    .foot .copy p{
+        line-height: 18px;
+        font-size: 14px;
+    }
 }

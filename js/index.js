@@ -65,7 +65,17 @@ var carouselSwiper = new Swiper('.swiper-carousel', {
     }
 });
 
-
+var xuebaSlide = new Swiper('.four-swiper', {
+    // autoplay: 5000,//可选选项，自动滑动
+    autoplayDisableOnInteraction : false,
+    pagination: '.slide4-page',
+    paginationClickable :true,
+    paginationType : 'bullets',
+    keyboardControl : true,
+    loop: true,
+    onSlideChangeEnd: function () {
+    }
+});
 
 $(function () {
     $(".lazy").lazyload({effect: "fadeIn"});
@@ -84,7 +94,7 @@ $(function () {
         }
     }
 
-    var xueba_slide_init = function () {
+    /*var xueba_slide_init = function () {
         var xueba_list = [
             {list: [
                 {id:1,img: "group_1.1.jpg",name:"张云翼",intro: "清华大学 土木工程专业",detail:""},
@@ -128,7 +138,7 @@ $(function () {
         $(".four-swiper .swiper-wrapper").html(html)
 
         var xuebaSlide = new Swiper('.four-swiper', {
-            autoplay: 3000,//可选选项，自动滑动
+            autoplay: 5000,//可选选项，自动滑动
             autoplayDisableOnInteraction : false,
             pagination: '.slide4-page',
             paginationClickable :true,
@@ -136,10 +146,9 @@ $(function () {
             keyboardControl : true,
             loop: true,
             onSlideChangeEnd: function () {
-                // lazy();
             }
         });
-    }
+    }*/
 
     var show_video = function (config) {
         $(".video-box").fadeIn(400)
@@ -205,7 +214,7 @@ $(function () {
     })
 
     init_page();
-    xueba_slide_init();
+    // xueba_slide_init();
     bind_event();
     lazy();
     getFooter(true);
