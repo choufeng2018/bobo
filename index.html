@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="icon" href="resource/index/ico.png">
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery.lazyload.js"></script>
     <script src="js/swiper.min.js"></script>
@@ -46,6 +46,22 @@
             top: 10px;
             right: 10px;
             cursor: pointer;
+        }
+        .a-close{
+            display: inline-block;
+            width: 100px;
+            margin: 20px auto;
+            height: 30px;
+            background: rgba(0,0,0,.65);
+            background-size: 45%;
+            position: static;
+            z-index: 999;
+            top: auto;
+            right: auto;
+            cursor: pointer;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
         }
         @media screen and (max-width: 768px){
             .flowplayer {
@@ -136,6 +152,8 @@
                             <source type="video/mp4" src="resource/index/method.mp4">
                         </video>
                     </div>
+                    <div class="clear"></div>
+                    <a class="close a-close">关闭</a>
                 </div>
             </div>
         </div>
@@ -208,21 +226,20 @@
                 </div>
                 <div class="right ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0s">
                     <div class="code clear">
-                        <div class="code-left">
-                        <p class="ss-1">扫一扫订阅学霸播播</p>
-                        </div>
-                        <div class="code-img">
-                            <!--<span class="trig"></span>-->
+                        <div class="code-img ani" swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
                             <img src="resource/index/index_png_24_03.jpg">
                         </div>
+                        <div class="code-left">
+                            <p class="ss-1">扫一扫订阅学霸播播</p>
+                        </div>
+
                     </div>
                     <div class="code clear">
-                        <div class="code-left">
-                        <p class="ss-1">扫一扫享受学霸服务</p>
-                        </div>
-                        <div class="code-img">
-                            <!--<span class="trig"></span>-->
+                        <div class="code-img ani" swiper-animate-effect="bounce" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
                             <img src="resource/index/index_png_24_06.jpg">
+                        </div>
+                        <div class="code-left">
+                            <p class="ss-1">扫一扫享受学霸服务</p>
                         </div>
                     </div>
                     <div class="clear"></div>

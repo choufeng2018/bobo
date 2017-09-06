@@ -181,7 +181,7 @@ $(function () {
             $.each(list, function (j, t) {
                 var link_a = "", code_html = "";
                 if(isPc){
-                    link_a = '<a class="play-icon" href="javascript:void(0);"><img src="../resource/major/play_btn_04.png"></a>';
+                    link_a = '<a class="play-icon" href="javascript:void(0);"><img class="play_ico_btn" src="../resource/major/play_btn_04.png"></a>';
                     code_html = '<div class="cover">\n' +
                     '                        <div class="code-box">\n' +
                     '                            <img class="lazy code-img" data-original="../resource/major/'+ t.code +'">\n' +
@@ -228,10 +228,29 @@ $(function () {
         window.addEventListener("resize",function () {
             var img = $("#firstBox");
             if(img.attr("src")){
-                var v_height = img.height();
+                var v_height = scope.vheight = img.height();
                 $(".img-box").css({'height': v_height});
             }
         })
+
+        $(".play-icon").on("click",function (e) {
+            e.stopPropagation();
+            var cover = $(this).next(".cover");
+            // console.log(scope.vheight)
+            if(cover){
+                cover.css({"height": scope.vheight+"px"})
+            }
+            $(".right-cont").find(".video").addClass("sys")
+
+            $(this).parent().parent().removeClass("sys")
+            $(this).parentsUntil(".right-cont").find(".sys .cover").css({"height": 0})
+        })
+
+        $(document).on("click",".container",function (e) {
+            e.stopPropagation();
+            $(".right-cont").find(".video").addClass("sys").find(".cover").css({"height": 0})
+        })
+
     }
 
 
@@ -246,7 +265,7 @@ $(function () {
         var first = document.getElementById("firstBox")
         if(first.complete){
             isLoaded = true;
-            var v_height = img.height();
+            var v_height = scope.vheight = img.height();
             // console.log(v_height)
             $(".img-box").css({'height': v_height});
         }

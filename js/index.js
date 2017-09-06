@@ -146,8 +146,11 @@ $(function () {
 
         // var v = document.getElementById(config.id)
         // v.play();
-
-        $("."+config.id).find("video").get(0).play();
+        if(scope.width <= 768){
+            $("."+config.id).find(".fp-ui").click();
+        }else{
+            $("."+config.id).find("video").get(0).play();
+        }
     }
     var pause = function () {
         // var v1 = document.getElementById("my-video-1");

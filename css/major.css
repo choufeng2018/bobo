@@ -107,7 +107,7 @@ header{
     left: 0;
     background: rgba(54,54,54,0.1);
 }
-.play-icon img{
+.play-icon .play_ico_btn{
     position: absolute;
     display: inline-block;
     width: 64px;
@@ -116,6 +116,14 @@ header{
     left: 50%;
     margin-top: -32px;
     margin-left: -32px;
+    transition: all 0.3s;
+}
+.play-icon:hover .play_ico_btn{
+    -webkit-transform: scale(1.5,1.5);
+    -moz-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    -o-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
 }
 .video-img{
     width: 100%;
@@ -130,12 +138,14 @@ header{
 }
 .cover{
     position: absolute;
-    top: 0;
+    height: 0;
     bottom: 0;
     width: 100%;
     background: rgba(120,120,120,0.7);
-    visibility: hidden;
-    transition: visibility 0.2s;
+    visibility: visible;
+    overflow: hidden;
+    transition: all 0.3s;
+    z-index: 100;
 }
 .code-box{
     /*width=112px;*/
@@ -148,6 +158,7 @@ header{
     padding: 6px;
     background: #fff;
     border-radius: 5px;
+    z-index: 99;
 }
 .code-img{
     width: 90px;
@@ -161,9 +172,6 @@ header{
     bottom: -40px;
 }
 
-.img-box:hover .cover{
-    visibility: visible;
-}
 
 @media screen and (min-width: 1367px){
     .code-img{
@@ -181,7 +189,7 @@ header{
         margin: 5px 0 5px 5px;
     }
     .video-info{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
         margin-bottom: 5px;
         word-break:break-all;

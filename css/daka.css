@@ -150,8 +150,17 @@ header{
     box-sizing: border-box;
     margin: 1%;
     float: left;
+    transition: all 0.2s;
 }
+.list-item:hover{
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    box-shadow: 0 0 15px #b19592;
 
+}
 .img-border{
     width: 140px;
     height: 140px;
@@ -165,6 +174,7 @@ header{
     border-radius: 50%;
     width: 140px;
     height: 140px;
+    float: left;
 }
 .list-item .name{
     color: #5d4f5c;

@@ -39,7 +39,7 @@
                 var $this = $(this);
                 if($this.attr("src") != settings.placeholder){
                     return;
-                // 新增 陈宝俊
+                // 新增
                 }
                 if (settings.skip_invisible && !$this.is(":visible")) {
                     return;

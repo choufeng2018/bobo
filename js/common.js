@@ -1,5 +1,6 @@
 $(function() {
 
+    $("head").append('<link rel="icon" href="../resource/index/ico.png">')
     $("img.lazy").lazyload({effect: "fadeIn"});
 
 });

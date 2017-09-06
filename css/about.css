@@ -129,10 +129,13 @@ header{
         top: 0;
         right: 0;
         z-index: 9;
-        margin: 15px 0;
+        margin: 30px 0;
     }
     .about-right .inner{
         margin: 20px 15px;
+    }
+    .about-right .inner p{
+        text-indent: 2em;
     }
 }
 
@@ -215,16 +218,16 @@ header{
         background-color: rgba(182,182,182,0.3);
         width: 100%;
         float: right;
-        margin-top: 0px;
-        margin-right: 0;
         text-align: justify;
         padding: 15px 0;
+        margin: 20px 0;
     }
     .cont-right p{
         line-height: 24px;
         font-size: 16px;
         letter-spacing: 0px;
         margin:  0 10px;
+        text-indent: 2em;
     }
 }
 
@@ -274,8 +277,8 @@ header{
 }
 @media screen and (max-width: 768px){
     .cont-info{
-        margin-bottom: 20px;
         letter-spacing: 0px;
+        margin: 20px 0;
     }
     .left-info{
         /*width: 430px;*/
@@ -295,6 +298,7 @@ header{
         float: none;
         letter-spacing: 2px;
         text-align: center;
+        margin: 15px 0;
     }
     .right-info .code-box{
         text-align: center;
@@ -308,4 +312,7 @@ header{
         margin-right: 0;
         margin-left: 20%;
     }
+}
+.map img {
+    width: 150%;
 }
