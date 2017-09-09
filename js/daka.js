@@ -191,4 +191,5 @@ $(function () {
     show_list();
     bind_event();
     getFooter();
+    getFixed();
 })

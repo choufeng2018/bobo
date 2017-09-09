@@ -22,6 +22,7 @@ $(function () {
 
     init_about();
     getFooter(true);
+    getFixed();
 })
 
 

@@ -217,6 +217,7 @@ $(function () {
             $("#"+ id ).html(html);
         })
         $(".img-box").css({'height': scope.vheight + 'px'});
+        $(".video-img").css({'height': scope.vheight + 'px'});
         lazy();
     }
 
@@ -273,7 +274,7 @@ $(function () {
                 var img = $("#firstBox");
                 isLoaded = true;
                 scope.vheight = img.height();
-                console.log(scope.vheight)
+                // console.log(scope.vheight)
                 show_videos();
 
                 if(isLoaded){
@@ -287,4 +288,5 @@ $(function () {
     get_firstbox();
     getFooter();
     bind_event();
+    getFixed();
 })

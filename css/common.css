@@ -201,11 +201,12 @@ header{
 footer{
     width: 100%;
     background: #6f6f6f;
-    padding-bottom: 10px;
+    padding: 10px 0;
     overflow: hidden;
+    margin-top: 90px;
 }
 .ft-form{
-    padding: 30px 0;
+    padding: 15px 0;
     width: 850px;
     margin: auto;
 }
@@ -245,7 +246,17 @@ footer{
     width: 100%;
 }
 
+.form-box{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #6f6f6f;
+    z-index: 999;
+}
 @media screen and (max-width: 768px){
+    footer{
+        margin-top: 30px;
+    }
     .ft-form{
         padding: 8px 0 5px;
         width: auto;
@@ -290,12 +301,92 @@ footer{
         line-height: 18px;
         font-size: 14px;
     }
+    .form-box{
+        position: static;
+    }
 }
 
 
+/*固定*/
+.fix-box{
+    position: fixed;
+    bottom: 110px;
+    right: 0px;
+    color: #F4B81A;
+    cursor: pointer;
+    width: 50px;
+}
+.fix-a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    color: inherit;
+    /*overflow: hidden;*/
+}
+.fix-box .f-b{
+    position: absolute;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    left: 0;
+    width: 150px;
+    transition: all 0.5s;
+}
+@media screen and (min-width: 768px){
+    .fix-box .f-b:hover{
+        /*background: rgba(0,0,0,0.4);*/
+        background: rgba(180,180,180,0.9);
+        left: -120px;
+    }
 
+}
 
+.fix-box .f-ic{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.fix-box .ic-p{
+    background: url("../resource/index/fix_1.png") center / cover;
+}
+.fix-box .ic-e{
+    background: url("../resource/index/fix_3.png") center /cover;
+}
+.fix-box .ic-b{
+    background: url("../resource/index/fix_2.png") center / cover;
+}
+.fix-box .f-txt{
+    display: none;
+}
 
+.f-b:hover .f-txt{
+    display: inline;
+}
+.fix-box .edit-a{
+    display: none;
+}
 
-
-
+@media screen and (max-width: 768px){
+    .fix-box{
+        bottom: 20px;
+        right: 0px;
+        width: 40px;
+    }
+    .fix-a{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 2px;
+    }
+    .fix-box .f-ic{
+        width: 20px;
+        height: 20px;
+    }
+    .fix-box .edit-a{
+        display: block;
+    }
+    .f-b:hover .f-txt{
+        display: none;
+    }
+}

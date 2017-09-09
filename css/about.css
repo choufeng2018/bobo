@@ -1,25 +1,28 @@
 header{
     background-color: rgba(226,110,25,0.4);
 }
+footer{
+    padding-top: 0;
+}
 .logo-box a{
     background-position: 0 -42px;
 }
 .banner{
     width: 100%;
-    /*height: 892px;*/
-    height: 960px;
-    background: url("../resource/about/about_01.png") no-repeat bottom center;
+    height: 650px;
+    background: url("../resource/about/banner.png") no-repeat bottom center;
     background-size: cover;
 }
 
 @media screen and (max-width: 1366px){
     .banner{
-        height: 710px;
+        height: 460px;
     }
 }
 @media screen and (max-width: 768px){
     .banner{
-        height: 250px;
+        height: 200px;
+        margin-top: 62px;
     }
 }
 
@@ -53,6 +56,8 @@ header{
 .line-tit{
     font-size: 16px;
     margin: 50px 20px;
+    letter-spacing: 0;
+    color: #a8a8a8;
 }
 .line-txt{
     /*font-size: 30px;*/
@@ -90,7 +95,8 @@ header{
         margin-top: 30px;
         font-size: 40px;
         letter-spacing: 5px;
-        text-shadow: 2px 2px 2px #666;
+        text-shadow: 2px 2px 2px #999;
+        color: #cfcfcf;
     }
     .img-box img{
         width: 854px;
@@ -119,7 +125,7 @@ header{
     .about-right{
         width: 100%;
         float: right;
-        background-color: rgba(182,182,182,0.3);
+        background-color: rgba(182,182,182,0.2);
         /*padding: 174px 40px 25px 50px;*/
         color: #666;
         line-height: 24px;
@@ -215,7 +221,7 @@ header{
     }
 
     .cont-right{
-        background-color: rgba(182,182,182,0.3);
+        background-color: rgba(182,182,182,0.2);
         width: 100%;
         float: right;
         text-align: justify;

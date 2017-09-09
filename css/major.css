@@ -1,21 +1,25 @@
 header{
     background-color: rgba(0,0,0,0.5);
 }
+.logo-box a{
+    background-position: 0 -42px;
+}
 .banner{
     width: 100%;
-    height: 860px;
-    background: #fff url("../resource/major/banner_01.png") no-repeat top center;
+    height: 750px;
+    background: #fff url("../resource/major/banner.png") no-repeat top center;
     background-size: cover;
 }
 
 @media screen and (max-width: 1366px){
     .banner{
-        height: 620px;
+        height: 530px;
     }
 }
 @media screen and (max-width: 768px){
     .banner{
         height: 200px;
+        margin-top: 63px;
     }
 }
 
@@ -88,7 +92,7 @@ header{
     float: right;
 }
 .video{
-    width: 40%;
+    width: 22%;
     margin: 15px;
     overflow: hidden;
     display: inline-block;
@@ -125,11 +129,11 @@ header{
     transition: all 0.3s;
 }
 .play-icon:hover .play_ico_btn{
-    -webkit-transform: scale(1.5,1.5);
-    -moz-transform: scale(1.5,1.5);
-    -ms-transform: scale(1.5,1.5);
-    -o-transform: scale(1.5,1.5);
-    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.35,1.35);
+    -moz-transform: scale(1.35,1.35);
+    -ms-transform: scale(1.35,1.35);
+    -o-transform: scale(1.35,1.35);
+    transform: scale(1.35,1.35);
 }
 .video-img{
     width: 100%;
@@ -141,6 +145,10 @@ header{
     line-height: 40px;
     margin-bottom: 10px;
     height: 40px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .cover{
     position: absolute;
@@ -160,8 +168,8 @@ header{
     left: 50%;
     top: 50%;
     margin-left: -56px;
-    margin-top: -56px;
-    padding: 6px;
+    margin-top: -66px;
+    padding: 5px;
     background: #fff;
     border-radius: 5px;
     z-index: 99;
@@ -179,14 +187,23 @@ header{
 }
 
 
-@media screen and (min-width: 1367px){
+@media screen and (max-width: 1366px){
+    .video{
+        width: 30%;
+    }
     .code-img{
-        width: 110px;
+        width: 100px;
     }
     .info{
         padding: 7px 12px;
-        font-size: 14px;
-        bottom: -40px;
+        font-size: 12px;
+        bottom: -36px;
+    }
+    .video-info{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 5px;
+        height: 40px;
     }
 }
 @media screen and (max-width: 768px){
@@ -203,6 +220,7 @@ header{
         -webkit-line-clamp:2;
         -webkit-box-orient:vertical;
         overflow:hidden;
+        white-space: normal;
     }
     .play-icon img{
         position: absolute;

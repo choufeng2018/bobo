@@ -202,6 +202,7 @@ $(function () {
     get_firstbox();
     getFooter();
     bind_event();
+    getFixed();
 })
 
 

@@ -7,7 +7,7 @@ var scope = {
 
 // 检测设备屏幕 调整首屏轮播
 if(scope.width <= 768){
-    var mbanner = ["mbanner_1.jpg","mbanner_2.jpg","mbanner_3.jpg"];
+    var mbanner = ["mbanner_1.jpg","mbanner_2.png","mbanner_3.png"];
     var html = ""
     $.each(mbanner,function (i, v) {
         html += '<div class="swiper-slide">\n' +
