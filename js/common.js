@@ -95,7 +95,9 @@ var getFooter = function (ismap) {
     var map_path = 'resource/index/index_png_24_08.png',
         qiniuniu = '../resource/index/qiniuniu.png',
         fix_form_1 = '<div class="form-box">',
-        fix_form_2 = '</div>';
+        fix_form_2 = '</div>',
+        action_path = '../email.php';
+
     if(isAbout){
         map_path = '../resource/index/index_png_24_08.png'
     }
@@ -104,6 +106,7 @@ var getFooter = function (ismap) {
         qiniuniu = 'resource/index/qiniuniu.png';
         fix_form_1 = '';
         fix_form_2 = '';
+        action_path = 'email.php'
     }
 
     var foot = '';
@@ -112,7 +115,8 @@ var getFooter = function (ismap) {
         '                </div>'
 
     foot = '<div class="foot" id="foot">\n' + fix_form_1 +
-        '                    <form class="ft-form" action="email.php" method="post" onsubmit="return check_form();">\n' +
+        '                    <form class="ft-form" action="'+ action_path +'" method="post" onsubmit="return check_form();">\n' +
+
         '                        <label>体验课程</label>\n' +
         '                        <input id="ft-name" class="ft-input" type="text" name="name" placeholder="姓名">\n' +
         '                        <input id="ft-phone" class="ft-input" type="text" name="phone" placeholder="手机号">\n' +
