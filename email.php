@@ -49,12 +49,16 @@ require_once ('inc/email.inc.php');
 $smtpserver = "ssl://smtp.qq.com";//SMTP服务器
 $smtpserverport = "465";//SMTP服务器端口
 $smtpusermail = "395442161@qq.com";//SMTP服务器的用户邮箱
-$smtpemailto = "bd@xuebabobo.com";//发送给谁
+//$smtpemailto = "bd@xuebabobo.com";//发送给谁
+$smtpemailto = "1391457768@qq.com";//发送给谁
 $smtpuser = "395442161";//SMTP服务器的用户帐号
 $smtppass = "ewvouxhcgngbcaef";//填写SMTP服务器的用户密码，不是qq密码
 $mailsubject = "bobo官网邮件";//$con_name."发来的咨询";//邮件主题
 $mailbody['name']=$_POST['name'];
 $mailbody['phone']=$_POST['phone'];
+$mailbody['url']=$_POST['url'];
+$stri = $mailbody['url'];
+
 $str=implode($mailbody);
 $mailbody=$str;
 //$mailbody = "<a style='font-size:18px;color:#000;font-family:微软雅黑;text-decoration:none;'>姓名:".$con_name."<br/>职位:".$con_position."<br/>手机:".$con_tel."<br/>邮箱:".$con_email."<br/>所在城市:".$con_city."<br/>详细地址:<br/>".$con_add."</a><br/>";//邮件内容
@@ -63,8 +67,8 @@ $mailtype = "HTML";//邮件格式（HTML/TXT）,TXT为文本邮件
 $smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
 $smtp->debug = false;//是否显示发送的调试信息
 $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype);
-	echo "<script style='content:text/html'; charset='utf-8';>alert('邮件发送成功!')</script>";
-	echo '<script>location.href="pages/about.html"</script>';
+	echo "<script style='content:text/html'; charset='utf-8';>alert('预约成功，请稍后！')</script>";
+	echo "<script>location.href='".$stri."'</script>";
 
 	exit();
 

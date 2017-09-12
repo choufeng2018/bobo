@@ -66,7 +66,7 @@ var carouselSwiper = new Swiper('.swiper-carousel', {
 });
 
 var xuebaSlide = new Swiper('.four-swiper', {
-    // autoplay: 5000,//可选选项，自动滑动
+    autoplay: 5000,//可选选项，自动滑动
     autoplayDisableOnInteraction : false,
     pagination: '.slide4-page',
     paginationClickable :true,

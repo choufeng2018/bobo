@@ -1,12 +1,13 @@
 header{
-    background-color: rgba(224,153,46,0.8);
+    /*background-color: rgba(224,153,46,0.8);*/
+    background-color: rgba(0,0,0,0.5);
 }
 .logo-box a{
     background-position: 0 -43px;
 }
 
 .banner{
-    margin-top: 70px;
+    /*margin-top: 70px;*/
     height: 660px;
     width: 100%;
     background: url("../resource/method/banner_bg.png") no-repeat center;

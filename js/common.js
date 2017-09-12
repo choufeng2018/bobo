@@ -20,7 +20,7 @@ $(function() {
                 }
 
             }else{
-                $(".form-box").css({"bottom":"0px"})
+                $(".form-box").css({"bottom":"-1px"})
                 if(com_width > 768){
                     $(".fix-box").css({"bottom":"110px"})
                 }else{
@@ -41,15 +41,21 @@ var lazy = function () {
 }
 
 var getHeader = function (page) {
+    // var bbpath = location.protocol + "//" + location.hostname + "/";
     page = page || 'index';
-    var li_list = "";
+    var li_list = "",
+    menu_img = "../resource/index/menu_phone.png",
+    logo_link = "../index.html";
 
     if(page == "index"){
         li_list = '<li class="index"><a href="index.html">首页</a><span>/</span></li>\n' +
         '                <li class="daka"><a href="pages/daka.html">学神大咖</a><span>/</span></li>\n' +
         '                <li class="major"><a href="pages/major.html">专业介绍</a><span>/</span></li>\n' +
         '                <li class="method"><a href="pages/method.html">学习方法</a><span>/</span></li>\n' +
-        '                <li class="about"><a href="pages/about.html">关于我们</a><span>/</span></li>\n'
+        '                <li class="about"><a href="pages/about.html">关于我们</a><span>/</span></li>\n';
+
+        menu_img = "resource/index/menu_phone_index.png";
+        logo_link = "index.html"
     }else{
         li_list = '<li class="index"><a href="../index.html">首页</a><span>/</span></li>\n' +
             '                <li class="daka"><a href="daka.html">学神大咖</a><span>/</span></li>\n' +
@@ -60,12 +66,12 @@ var getHeader = function (page) {
 
     var head = '<div class="head bb-width">\n' +
         '        <div class="logo-box">\n' +
-        '            <a href="index.html"></a>\n' +
+        '            <a href="'+ logo_link +'"></a>\n' +
         '        </div>\n' +
         '        <div class="link-box">\n' +
         '            <ul>\n' +
                         li_list +
-        '                <li><p href="javascript:void(0);">400-920-7568</p></li>\n' +
+        '                <li><img style="margin-top: 15px;" src="'+ menu_img +'"></li>\n' +
         '            </ul>\n' +
         '        </div>\n' +
         '    </div>'
@@ -89,7 +95,7 @@ var getHeader = function (page) {
 
 
 var getFooter = function (ismap) {
-
+    var calback_url = location.href;
     var isAbout = location.pathname.indexOf("about") <= -1 ? false : true;
     var isIndex = location.pathname.indexOf("index") <= -1 ? false : true;
     var map_path = 'resource/index/index_png_24_08.png',
@@ -116,7 +122,7 @@ var getFooter = function (ismap) {
 
     foot = '<div class="foot" id="foot">\n' + fix_form_1 +
         '                    <form class="ft-form" action="'+ action_path +'" method="post" onsubmit="return check_form();">\n' +
-
+        '                        <input id="hide-input" type="hidden" name="url" value="'+ calback_url +'">\n' +
         '                        <label>体验课程</label>\n' +
         '                        <input id="ft-name" class="ft-input" type="text" name="name" placeholder="姓名">\n' +
         '                        <input id="ft-phone" class="ft-input" type="text" name="phone" placeholder="手机号">\n' +

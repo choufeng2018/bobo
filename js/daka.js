@@ -5,7 +5,7 @@ var scope = {
     list_l:[
         {name:'曹敏',college:'中国地质大学',major:'地理信息系统',intro:'一个勤奋而努力的陕西女孩',img:'caoming.png'},
         {name:'曹心慧',college:'中国人民大学',major:'国际政治',intro:'中国人民大学世界经济研究生',img:'caoxinhui.png'},
-        {name:'陈静仪',college:'北京大学',major:'哲学与宗教学专业',intro:'爱爱考爱阅读',img:'chenjingyi.png'},
+        {name:'陈静仪',college:'北京大学',major:'哲学与宗教学专业',intro:'爱思考爱阅读',img:'chenjingyi.png'},
         {name:'陈苏娅',college:'清华大学',major:'新闻与传播学院',intro:'文学、国标、摄影都是最爱',img:'chensuya.png'},
         {name:'陈晓琦',college:'清华大学',major:'纤维艺术设计',intro:'本科专业和综合学分均班级第一',img:'chenxiaoqi.png'},
         {name:'陈子健',college:'中国地质大学',major:'构造地质学',intro:'喜欢探险的地质男',img:'chenzijian.png'},
@@ -42,7 +42,6 @@ var scope = {
         {name:'陆俊肖',college:'中国人民大学',major:'农村区域经济与管理',intro:'有着北方豪爽的南方姑娘',img:'lujunxiao.png'},
         {name:'鹿飞宇',college:'北京师范大学',major:'心理学',intro:'心理学部,交响乐团团长，用心理学解读人生',img:'lufeiyu.png'},
         {name:'马瑞敏',college:'北京大学',major:'市场营销',intro:'高中阶段曾从年级800名到第11名',img:'maruiming.png'},
-        {name:'马智玲',college:'中国人民大学',major:'哲学',intro:'北京大学法律系读硕士',img:'mazhiling.png'},
         {name:'梅玲',college:'北京大学',major:'社会学',intro:'2013年高考全国卷数学满分',img:'meiling.png'},
         {name:'孟瑶玥',college:'上海财经大学',major:'生态学',intro:'长期保持专业第一的成绩',img:'mengyueyao.jpg'},
         {name:'彭冲',college:'中南大学',major:'新能源与器件',intro:'北京理工大学研究生',img:'pengchong.png'},

@@ -154,7 +154,7 @@ footer{
 }
 .cont-left{
     background-color: rgba(182,182,182,0.3);
-    width: 60%;
+    width: 50%;
     position: absolute;
     top: -50px;
     left: 0;
@@ -179,7 +179,7 @@ footer{
 
 
 .cont-right{
-    width: 43%;
+    width: 41%;
     float: right;
     margin-top: 100px;
     margin-right: 5%;

@@ -115,6 +115,7 @@ header{
     color: #fff;
     display: inline-block;
     font-size: 16px;
+    height: 70px;
 }
 .link-box li.current a{
     color: #F4B81A;
@@ -312,9 +313,11 @@ footer{
     position: fixed;
     bottom: 110px;
     right: 0px;
-    color: #F4B81A;
+    /*color: #d35858;*/
+    color: #fff;
     cursor: pointer;
     width: 50px;
+    font-weight: bold;
 }
 .fix-a{
     position: relative;
@@ -328,15 +331,13 @@ footer{
 .fix-box .f-b{
     position: absolute;
     padding: 10px;
-    background: rgba(0,0,0,0.2);
+    background: #F4B81A;
     left: 0;
     width: 150px;
     transition: all 0.5s;
 }
 @media screen and (min-width: 768px){
     .fix-box .f-b:hover{
-        /*background: rgba(0,0,0,0.4);*/
-        background: rgba(180,180,180,0.9);
         left: -120px;
     }
 
@@ -349,13 +350,16 @@ footer{
     vertical-align: middle;
 }
 .fix-box .ic-p{
-    background: url("../resource/index/fix_1.png") center / cover;
+    background: url("../resource/index/fix_1_2.png") center / cover;
 }
 .fix-box .ic-e{
     background: url("../resource/index/fix_3.png") center /cover;
 }
 .fix-box .ic-b{
-    background: url("../resource/index/fix_2.png") center / cover;
+    background: url("../resource/index/fix_2_2.png") center / cover;
+}
+@media screen and (min-width: 768px){
+
 }
 .fix-box .f-txt{
     display: none;
