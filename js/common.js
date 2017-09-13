@@ -36,8 +36,13 @@ $(function() {
 
 });
 
-var lazy = function () {
-    $("img.lazy").lazyload({effect: "fadeIn"});
+var lazy = function (config) {
+    config = config || {};
+    config.placeholder = config.placeholder || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+    $("img.lazy").lazyload({
+        effect: "fadeIn",
+        placeholder: config.placeholder
+    });
 }
 
 var getHeader = function (page) {
@@ -54,7 +59,11 @@ var getHeader = function (page) {
         '                <li class="method"><a href="pages/method.html">学习方法</a><span>/</span></li>\n' +
         '                <li class="about"><a href="pages/about.html">关于我们</a><span>/</span></li>\n';
 
-        menu_img = "resource/index/menu_phone_index.png";
+        if($(window).width() <= 768){
+            menu_img = "resource/index/menu_phone.png"
+        }else{
+            menu_img = "resource/index/menu_phone_index.png";
+        }
         logo_link = "index.html"
     }else{
         li_list = '<li class="index"><a href="../index.html">首页</a><span>/</span></li>\n' +
@@ -63,6 +72,7 @@ var getHeader = function (page) {
             '                <li class="method"><a href="method.html">学习方法</a><span>/</span></li>\n' +
             '                <li class="about"><a href="about.html">关于我们</a><span>/</span></li>\n'
     }
+
 
     var head = '<div class="head bb-width">\n' +
         '        <div class="logo-box">\n' +
