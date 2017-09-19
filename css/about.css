@@ -1,5 +1,5 @@
 header{
-    background-color: rgba(226,110,25,0.4);
+    background-color: rgba(0,0,0,0.5);
 }
 footer{
     padding-top: 0;
@@ -32,7 +32,7 @@ footer{
     position: relative;
 }
 .img-box{
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
     color: #b6b6b6;
     /*font-size: 146px;*/
@@ -153,8 +153,8 @@ footer{
     letter-spacing: 2px;
 }
 .cont-left{
-    background-color: rgba(182,182,182,0.3);
-    width: 50%;
+    /*background-color: rgba(182,182,182,0.3);*/
+    /*width: 50%;*/
     position: absolute;
     top: -50px;
     left: 0;
@@ -179,14 +179,14 @@ footer{
 
 
 .cont-right{
-    width: 41%;
-    float: right;
+    /*width: 41%;*/
+    /*float: right;*/
     margin-top: 100px;
-    margin-right: 5%;
-    text-align: justify;
+    /*margin-right: 5%;*/
+    text-align: center;
 }
 .cont-right p{
-    line-height: 24px;
+    line-height: 30px;
     font-size: 18px;
     letter-spacing: 2px;
 }
@@ -238,6 +238,7 @@ footer{
 
 /*============================*/
 .cont-info{
+    margin-top: 50px;
     margin-bottom: 50px;
     letter-spacing: 2px;
 }
@@ -254,14 +255,17 @@ footer{
     padding-left: 40px;
     line-height: 25px;
 }
+.contact.c-0{
+    background: url("../resource/index/slide6-icon_60.png") no-repeat left top;
+}
 .contact.c-1{
-    background: url("../resource/index/index_5__39.png") no-repeat left top;
+    background: url("../resource/index/slide6-icon_64.png") no-repeat left top;
 }
 .contact.c-2{
-    background: url("../resource/index/index_5__44.png") no-repeat left top;
+    background: url("../resource/index/slide6-icon_67.png") no-repeat left top;
 }
 .contact.c-3{
-    background: url("../resource/index/index_5__47.png") no-repeat left top;
+    background: url("../resource/index/slide6-icon_70.png") no-repeat left top;
 }
 
 .right-info{
@@ -273,8 +277,13 @@ footer{
     display: inline-block;
     margin-top: 40px;
 }
+.right-info .code-box img{
+    width: 100px;
+    height: 100px;
+}
 .right-info .code-box span{
     line-height: 30px;
+    font-size: 18px;
 }
 .code-2{
     margin-right: 20px;

@@ -119,7 +119,7 @@ header{
 }
 .link-box li.current a{
     color: #F4B81A;
-    border-bottom: 2px solid #F4B81A;
+    border-bottom: 4px solid #F4B81A;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

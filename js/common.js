@@ -153,6 +153,7 @@ var getFooter = function (ismap) {
 
 function check_form() {
     var bl = true;
+    var phoneReg = /^1[3|4|5|7|8][0-9]{9}$/;
 
     var o_name = $("#ft-name"), o_phone = $("#ft-phone");
     if(o_name.val() == ""){
@@ -164,8 +165,12 @@ function check_form() {
     if(o_phone.val() == ""){
         o_phone.css("border-color","#d35858");
         bl = false;
-    }else{
+    }else if(phoneReg.test(o_phone.val())){
         o_phone.css("border-color","white");
+        return true;
+    }else{
+        o_phone.css("border-color","#d35858");
+        bl = false;
     }
     return bl;
 }

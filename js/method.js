@@ -116,7 +116,7 @@ $(function () {
                         '                        </div>\n' +
                         '                    </div>'
                 }else{
-                    link_a = '<a class="play-icon" href="'+ t.link +'"><img src="../resource/major/play_btn_04.png"></a>';
+                    link_a = '<a class="play-icon" href="'+ t.link +'" target="_blank"><img src="../resource/major/play_btn_04.png"></a>';
                     code_html = ""
                 }
 
