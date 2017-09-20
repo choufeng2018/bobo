@@ -85,7 +85,6 @@ var scope = {
         {name:'臧嘉雯',college:'中央财经大学',major:'经济学',intro:'中央财经大学双学位优秀毕业论文',img:'zangjiawen.png'},
         {name:'翟志林',college:'北京师范大学',major:'学前教育',intro:'保送至清华大学教育研究院攻读硕士',img:'zhaizhilin.png'},
         {name:'张博',college:'中国人民大学',major:'信息管理与信息系统',intro:'副修数学与应用数学',img:'zhangbo.png'},
-        {name:'张宸嘉',college:'中国地质大学',major:'资源勘查工程专业',intro:'现本校研究生一年级',img:'zhangchenjia.png'},
         {name:'张皓璁',college:'清华大学',major:'会计学',intro:'曾赴海外交换，喜爱游泳、读书',img:'zhanghaocong.png'},
         {name:'张颖奇',college:'对外经济贸易大学',major:'西班牙语专业',intro:'曾获西班牙语排名专业第一',img:'zhangyinqi.png'},
         {name:'张雨佳',college:'天津科技大学',major:'国际经济与贸易',intro:'本科毕业综合排名专业第一，曾获国家奖学金',img:'zhangyujia.png'},

@@ -62,7 +62,7 @@ var getHeader = function (page) {
         if($(window).width() <= 768){
             menu_img = "resource/index/menu_phone.png"
         }else{
-            menu_img = "resource/index/menu_phone_index.png";
+            menu_img = "resource/index/menu_phone_2.png";
         }
         logo_link = "index.html"
     }else{
