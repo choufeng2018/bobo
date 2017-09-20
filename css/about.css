@@ -27,212 +27,49 @@ footer{
 }
 
 
-/*=================ABOUT US==============*/
+/*=====================================*/
 .about-us{
-    position: relative;
+    padding: 60px 0;
 }
-.img-box{
-    margin-top: 50px;
+.about-line{
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background: #ddd;
+}
+.about-top{
     text-align: center;
-    color: #b6b6b6;
-    /*font-size: 146px;*/
-    font-size: 126px;
-
-    font-weight: bolder;
-    letter-spacing: 20px;
-    font-family: "Microsoft YaHei","Microsoft Sans Serif ";
-    text-shadow: 2px 2px 2px #fff;
-    position: relative;
-    z-index: 99;
 }
-.img-box img{
-    width: 854px;
+.banner-title{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #333;
 }
-.about-left{
-    width: 45%;
-    float: left;
-    color: #a8a8a8;
+.banner-8{
+    margin: 20px 0;
 }
-.line-tit{
-    font-size: 16px;
-    margin: 50px 20px;
-    letter-spacing: 0;
-    color: #a8a8a8;
-}
-.line-txt{
-    /*font-size: 30px;*/
-    font-size: 24px;
-    font-weight: bold;
-    margin: 20px 0 0 120px;
-    letter-spacing: 5px;
-}
-.about-main{
-    position: relative;
-    /*min-height: 500px;*/
-}
-.about-right{
-    width: 60%;
-    float: right;
-    background-color: rgba(182,182,182,0.3);
-    /*background-color: #f3f2f1;*/
-    /*padding: 174px 40px 25px 50px;*/
+.copy-title{
     color: #666;
-    line-height: 30px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.about-bottom .inner{
     font-size: 18px;
-    text-align: justify;
-    position: absolute;
-    top: -50px;
-    right: 0;
-    z-index: 9;
-}
-.about-right .inner{
-    margin: 174px 40px 25px 50px;
-}
-
-@media screen and (max-width: 768px){
-    .img-box{
-        margin-top: 30px;
-        font-size: 40px;
-        letter-spacing: 5px;
-        text-shadow: 2px 2px 2px #999;
-        color: #cfcfcf;
-    }
-    .img-box img{
-        width: 854px;
-    }
-    .about-left{
-        width: 100%;
-        float: left;
-    }
-    .line-tit{
-        font-size: 16px;
-        margin: 20px 20px;
-        letter-spacing: 0;
-    }
-    .line-txt{
-        /*font-size: 30px;*/
-        font-size: 24px;
-        /*margin: 20px 0 0 120px;*/
-        margin: 0;
-        text-align: center;
-        letter-spacing: 5px;
-    }
-    .about-main{
-        position: relative;
-        /*min-height: 500px;*/
-    }
-    .about-right{
-        width: 100%;
-        float: right;
-        background-color: rgba(182,182,182,0.2);
-        /*padding: 174px 40px 25px 50px;*/
-        color: #666;
-        line-height: 24px;
-        letter-spacing: 0px;
-        font-size: 16px;
-        position: inherit;
-        top: 0;
-        right: 0;
-        z-index: 9;
-        margin: 30px 0;
-    }
-    .about-right .inner{
-        margin: 20px 15px;
-    }
-    .about-right .inner p{
-        margin: 5px 0;
-    }
-}
-
-
-/*=======================contact us===================*/
-.contact-main{
-    color: #3a4a7a;
-    position: relative;
-    letter-spacing: 2px;
-}
-.cont-left{
-    /*background-color: rgba(182,182,182,0.3);*/
-    /*width: 50%;*/
-    position: absolute;
-    top: -50px;
-    left: 0;
-    z-index: 9;
-}
-.cont-left .line-txt{
-    color: #3a4a7a;
-
-}
-.line-cont-1{
-    margin-top: 80px;
-}
-.line-cont{
-    font-size: 24px;
-    color: #3a4a7a;
-    line-height: 30px;
-    margin-left: 76px;
-}
-.cont-left .inner{
-    margin: 100px 40px 25px 50px;
-}
-
-
-.cont-right{
-    /*width: 41%;*/
-    /*float: right;*/
-    margin-top: 100px;
-    /*margin-right: 5%;*/
+    color: #666;
+    letter-spacing: 1px;
+    line-height: 34px;
     text-align: center;
 }
-.cont-right p{
-    line-height: 30px;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
 
 @media screen and (max-width: 768px){
-    .contact-main{
-        position: relative;
-    }
-    .cont-left{
-        background-color: transparent;
-        width: 100%;
-        position: inherit;
-        top: 0px;
-        left: 0;
-        z-index: 9;
-    }
-    .cont-left .line-txt{
-        color: #3a4a7a;
-    }
-    .line-cont-1{
-        margin-top: 10px;
-    }
-    .line-cont{
-        font-size: 18px;
-        color: #3a4a7a;
-        line-height: 24px;
-        margin-left: 6px;
-        text-align: center;
-    }
-    .cont-left .inner{
-        margin: 10px 40px 25px 10px;
-    }
-
-    .cont-right{
-        background-color: rgba(182,182,182,0.2);
-        width: 100%;
-        float: right;
-        text-align: justify;
-        padding: 15px 0;
-        margin: 20px 0;
-    }
-    .cont-right p{
-        line-height: 24px;
+    .about-bottom .inner{
         font-size: 16px;
-        letter-spacing: 0px;
-        margin: 5px 10px;
+        color: #666;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: justify;
+        margin: 0 10px;
     }
 }
 
@@ -252,20 +89,26 @@ footer{
     font-size: 22px;
     color: #5b646e;
     margin-top: 25px;
-    padding-left: 40px;
     line-height: 25px;
 }
-.contact.c-0{
-    background: url("../resource/index/slide6-icon_60.png") no-repeat left top;
+.contact i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    float: left;
 }
-.contact.c-1{
-    background: url("../resource/index/slide6-icon_64.png") no-repeat left top;
+.contact.c-0 i{
+    background: url("../resource/index/slide6-icon_60.png") left top / contain no-repeat ;
 }
-.contact.c-2{
-    background: url("../resource/index/slide6-icon_67.png") no-repeat left top;
+.contact.c-1 i{
+    background: url("../resource/index/slide6-icon_64.png") left top / contain no-repeat ;
 }
-.contact.c-3{
-    background: url("../resource/index/slide6-icon_70.png") no-repeat left top;
+.contact.c-2 i{
+    background: url("../resource/index/slide6-icon_67.png")  left top / contain no-repeat ;
+}
+.contact.c-3 i{
+    background: url("../resource/index/slide6-icon_70.png")  left top / contain no-repeat ;
 }
 
 .right-info{
@@ -284,6 +127,8 @@ footer{
 .right-info .code-box span{
     line-height: 30px;
     font-size: 18px;
+    display: block;
+    margin-top: 15px;
 }
 .code-2{
     margin-right: 20px;
@@ -304,7 +149,6 @@ footer{
     .contact{
         font-size: 16px;
         margin-top: 5px;
-        padding-left: 35px;
         line-height: 25px;
     }
 

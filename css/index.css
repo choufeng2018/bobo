@@ -909,20 +909,26 @@ footer{
     font-size: 22px;
     color: #5b646e;
     margin-top: 25px;
-    padding-left: 40px;
     line-height: 25px;
 }
-.contact.c-0{
-    background: url("../resource/index/slide6-icon_60.png") no-repeat left top;
+.contact i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    float: left;
 }
-.contact.c-1{
-    background: url("../resource/index/slide6-icon_64.png") no-repeat left top;
+.contact.c-0 i{
+    background: url("../resource/index/slide6-icon_60.png") left top / contain no-repeat ;
 }
-.contact.c-2{
-    background: url("../resource/index/slide6-icon_67.png") no-repeat left top;
+.contact.c-1 i{
+    background: url("../resource/index/slide6-icon_64.png") left top / contain no-repeat ;
 }
-.contact.c-3{
-    background: url("../resource/index/slide6-icon_70.png") no-repeat left top;
+.contact.c-2 i{
+    background: url("../resource/index/slide6-icon_67.png")  left top / contain no-repeat ;
+}
+.contact.c-3 i{
+    background: url("../resource/index/slide6-icon_70.png")  left top / contain no-repeat ;
 }
 
 .six_top .right{
@@ -962,6 +968,16 @@ footer{
 }
 .map img{
     width: 100%;
+}
+@media screen and (min-width: 1366px){
+    .code-img:after{
+        content: "";
+        display: block;
+        width: 60px;
+        height: 1px;
+        background: #999;
+        margin: 30px auto 0;
+    }
 }
 @media screen and (max-width: 1366px){
     .six_top{
