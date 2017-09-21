@@ -49,7 +49,7 @@ require_once ('inc/email.inc.php');
 $smtpserver = "ssl://smtp.qq.com";//SMTP服务器
 $smtpserverport = "465";//SMTP服务器端口
 $smtpusermail = "395442161@qq.com";//SMTP服务器的用户邮箱
-$smtpemailto = "hyh@xuebabobo.com";//发送给谁
+$smtpemailto = "service@xuebabobo.com";//发送给谁
 
 $smtpuser = "395442161";//SMTP服务器的用户帐号
 $smtppass = "ewvouxhcgngbcaef";//填写SMTP服务器的用户密码，不是qq密码
