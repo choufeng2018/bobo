@@ -4,16 +4,16 @@ date_default_timezone_set("Asia/Shanghai");
 function check_input($value)
 {
 // 去除斜杠
-if (get_magic_quotes_gpc())
-  {
-  $value = stripslashes($value);
-  }
+	if (get_magic_quotes_gpc())
+	{
+		$value = stripslashes($value);
+	}
 // 如果不是数字则加引号
-if (!is_numeric($value))
-  {
-  $value = "'" . mysql_real_escape_string($value) . "'";
-  }
-return $value;
+	if (!is_numeric($value))
+	{
+		$value = "'" . mysql_real_escape_string($value) . "'";
+	}
+	return $value;
 }
 
 $con_name = 'sdfs';//addslashes($_POST['c_name']);
@@ -27,7 +27,7 @@ $con_add = 'fdsd';//addslashes($_POST['c_add']);
 // var_dump($con_title);
 // var_dump($con_email);
 // var_dump($con_text);exit;
-// 
+//
 
 // function isemail($con_email) {
 //  return strlen($con_email) > 8 && preg_match("/^[-_+.[:alnum:]]+@((([[:alnum:]]|[[:alnum:]][[:alnum:]-]*[[:alnum:]])\.)+([a-z]{2,4})|(([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5])\.){3}([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5]))$/i", $con_email);
@@ -49,13 +49,13 @@ require_once ('inc/email.inc.php');
 $smtpserver = "ssl://smtp.qq.com";//SMTP服务器
 $smtpserverport = "465";//SMTP服务器端口
 $smtpusermail = "395442161@qq.com";//SMTP服务器的用户邮箱
-$smtpemailto = "bd@xuebabobo.com";//发送给谁
+$smtpemailto = "hyh@xuebabobo.com";//发送给谁
 
 $smtpuser = "395442161";//SMTP服务器的用户帐号
 $smtppass = "ewvouxhcgngbcaef";//填写SMTP服务器的用户密码，不是qq密码
 $mailsubject = "bobo官网邮件";//$con_name."发来的咨询";//邮件主题
-$mailbody['name']=$_POST['name'];
-$mailbody['phone']=$_POST['phone'];
+$mailbody['name']="姓名：".$_POST['name']."<br>";
+$mailbody['phone']="手机：".$_POST['phone']."<br>";
 $mailbody['url']=$_POST['url'];
 $stri = $mailbody['url'];
 
@@ -67,10 +67,10 @@ $mailtype = "HTML";//邮件格式（HTML/TXT）,TXT为文本邮件
 $smtp = new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
 $smtp->debug = false;//是否显示发送的调试信息
 $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype);
-	echo "<script style='content:text/html'; charset='utf-8';>alert('预约成功，请稍后！')</script>";
-	echo "<script>location.href='".$stri."'</script>";
+echo "<script style='content:text/html'; charset='utf-8';>alert('预约成功，请稍后！')</script>";
+echo "<script>location.href='".$stri."'</script>";
 
-	exit();
+exit();
 
 ?>
 
