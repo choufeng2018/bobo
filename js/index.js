@@ -66,17 +66,42 @@ var carouselSwiper = new Swiper('.swiper-carousel', {
     }
 });
 
-var xuebaSlide = new Swiper('.four-swiper', {
-    autoplay: 5000,//可选选项，自动滑动
-    autoplayDisableOnInteraction : false,
-    pagination: '.slide4-page',
-    paginationClickable :true,
-    paginationType : 'bullets',
-    keyboardControl : true,
-    loop: true,
-    onSlideChangeEnd: function () {
-    }
-});
+if(scope.width <= 768){
+    var xuebaSlide = new Swiper('.four-swiper', {
+        // autoplay: 5000,//可选选项，自动滑动
+        autoplayDisableOnInteraction : false,
+        pagination: '.slide4-page',
+        paginationClickable :true,
+        paginationType : 'bullets',
+        keyboardControl : true,
+        spaceBetween : 0,
+        slidesPerView : 2,
+        slidesPerGroup: 2,
+        slidesPerColumn : 2,
+
+        // slidesPerColumnFill : 'row',
+        // loop: true,
+
+    });
+}else{
+    var xuebaSlide = new Swiper('.four-swiper', {
+        // autoplay: 5000,//可选选项，自动滑动
+        autoplayDisableOnInteraction : false,
+        pagination: '.slide4-page',
+        paginationClickable :true,
+        paginationType : 'bullets',
+        keyboardControl : true,
+        spaceBetween : 20,
+        slidesPerView : 3,
+        slidesPerGroup: 3,
+        slidesPerColumn : 2,
+
+        // slidesPerColumnFill : 'row',
+        // loop: true,
+
+    });
+}
+
 
 $(function () {
     $(".lazy").lazyload({effect: "fadeIn"});
@@ -95,61 +120,39 @@ $(function () {
         }
     }
 
-    /*var xueba_slide_init = function () {
-        var xueba_list = [
-            {list: [
+    var xueba_slide_init = function () {
+        /*var xueba_list = [
                 {id:1,img: "group_1.1.jpg",name:"张云翼",intro: "清华大学 土木工程专业",detail:""},
                 {id:2,img: "group_1.2.jpg",name:"徐婧",intro: "北京大学  法学专业",detail:""},
                 {id:3,img: "group_1.3.jpg",name:"王子娇",intro: "中国人民大学  贸易经济专业",detail:""},
-                {id:4,img: "group_1.4.jpg",name:"沙梦吟",intro: "南开大学  生物科学专业",detail:""}
-            ]},
-            {list: [
+                {id:4,img: "group_1.4.jpg",name:"沙梦吟",intro: "南开大学  生物科学专业",detail:""},
+
                 {id:1,img: "group_2.1.jpg",name:"邱飞旸",intro: "清华大学 工业工程专业",detail:""},
                 {id:2,img: "group_2.2.jpg",name:"王怡汀",intro: "中国农业大学  食品工程专业",detail:""},
                 {id:3,img: "group_2.3.jpg",name:"鹿飞宇",intro: "北京师范大学 心理学专业",detail:""},
-                {id:4,img: "group_2.4.jpg",name:"唐子玉",intro: "中国人民大学  人力资源专业",detail:""}
-            ]},
-            {list: [
+                {id:4,img: "group_2.4.jpg",name:"唐子玉",intro: "中国人民大学  人力资源专业",detail:""},
+
                 {id:1,img: "group_3.1.jpg",name:"王君",intro: "中国人民大学  金融学专业",detail:""},
                 {id:2,img: "group_3.2.jpg",name:"朱文豪",intro: "对外经贸大学 阿拉伯语专业",detail:""},
                 {id:3,img: "group_3.3.jpg",name:"郭转转",intro: "北京大学  计算机科学与技术专业",detail:""},
                 {id:4,img: "group_3.4.jpg",name:"邵熠",intro: "北京邮电大学 通讯工程专业",detail:""}
-            ]}
         ];
         var html = "";
         $.each(xueba_list,function (i, v) {
 
-            var item_html = "";
-            var xueba_html = "";
-
-            $.each(v.list,function (j, t) {
-                xueba_html += '<div class="xueba">\n' +
-                    '                                <div class="lazy-box">\n' +
-                    '                                    <img src="resource/index/'+ t.img +'">\n' +
-                    '                                    <div class="detail">'+ t.detail +'</div>\n' +
-                    '                                </div>\n' +
-                    '                                <p class="name">'+ t.name +'</p>\n' +
-                    '                                <p class="intro">'+ t.intro +'</p>\n' +
-                    '                            </div>'
-            })
-
-            item_html += '<div class="swiper-slide">'+ xueba_html +'</div>';
-            html += item_html;
+            html += '<div class="swiper-slide"><div class="xueba">\n' +
+                '                                <div class="lazy-box">\n' +
+                '                                    <img src="resource/index/'+ v.img +'">\n' +
+                '                                    <div class="detail">'+ v.detail +'</div>\n' +
+                '                                </div>\n' +
+                '                                <p class="name">'+ v.name +'</p>\n' +
+                '                                <p class="intro">'+ v.intro +'</p>\n' +
+                '                            </div></div>'
         });
-        $(".four-swiper .swiper-wrapper").html(html)
+        $(".four-swiper .swiper-wrapper").html(html)*/
 
-        var xuebaSlide = new Swiper('.four-swiper', {
-            autoplay: 5000,//可选选项，自动滑动
-            autoplayDisableOnInteraction : false,
-            pagination: '.slide4-page',
-            paginationClickable :true,
-            paginationType : 'bullets',
-            keyboardControl : true,
-            loop: true,
-            onSlideChangeEnd: function () {
-            }
-        });
-    }*/
+
+    }
 
     var show_video = function (config) {
         $(".video-box").fadeIn(400)
@@ -218,5 +221,10 @@ $(function () {
     // xueba_slide_init();
     bind_event();
     lazy();
-    getFooter(true);
+    if(scope.width <= 768){
+        get_index_footer(false);
+    }else{
+        get_index_footer(true);
+    }
+
 })

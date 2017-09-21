@@ -151,6 +151,56 @@ var getFooter = function (ismap) {
     $("footer").html(foot);
 }
 
+
+var get_index_footer = function(ismap){
+    var calback_url = location.href;
+    var isAbout = location.pathname.indexOf("about") <= -1 ? false : true;
+    var isIndex = true;
+    var map_path = 'resource/index/index_png_24_08.png',
+        qiniuniu = '../resource/index/qiniuniu.png',
+        fix_form_1 = '<div class="form-box">',
+        fix_form_2 = '</div>',
+        action_path = '../email.php';
+
+    if(isAbout){
+        map_path = '../resource/index/index_png_24_08.png'
+    }
+
+    if(isIndex){
+        qiniuniu = 'resource/index/qiniuniu.png';
+        fix_form_1 = '';
+        fix_form_2 = '';
+        action_path = 'email.php'
+    }
+
+    var foot = '';
+    var map = '<div class="map">\n' +
+        '                    <a href="http://ditu.amap.com/place/B0FFG717BZ" target="_blank"><img class="lazy" src="'+ map_path +'"></a>\n' +
+        '                </div>'
+
+    foot = '<div class="foot" id="foot">\n' + fix_form_1 +
+        '                    <form class="ft-form" action="'+ action_path +'" method="post" onsubmit="return check_form();">\n' +
+        '                        <input id="hide-input" type="hidden" name="url" value="'+ calback_url +'">\n' +
+        '                        <label>体验课程</label>\n' +
+        '                        <input id="ft-name" class="ft-input" type="text" name="name" placeholder="姓名">\n' +
+        '                        <input id="ft-phone" class="ft-input" type="text" name="phone" placeholder="手机号">\n' +
+        '                        <input class="submit" type="submit" value="立即预约">\n' +
+        '                    </form>\n' + fix_form_2 +
+        '                    <div class="copy">\n' +
+        '                        <p>版权所有&copy;学霸播播 北京历说教育科技有限公司</p>\n' +
+        '                        <p>京ICP备16056024号-1</p>\n' +
+        '                        <p>技术支持：<a href="http://www.qiniuniu.com/" target="_blank"><img style="vertical-align: middle" src="'+ qiniuniu +'"></a></p>\n' +
+        '                    </div>\n' +
+        '                </div>'
+
+    if(ismap){
+        foot = map + foot;
+    }
+    $("footer").html(foot);
+}
+
+
+
 function check_form() {
     var bl = true;
     var phoneReg = /^1[3|4|5|7|8][0-9]{9}$/;
