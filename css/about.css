@@ -68,8 +68,11 @@ footer{
         color: #666;
         letter-spacing: 0;
         line-height: 24px;
-        text-align: justify;
+        text-align: center;
         margin: 0 10px;
+    }
+    .about-bottom .inner p{
+        margin: 0 10px 15px;
     }
 }
 
@@ -135,9 +138,15 @@ footer{
     margin-left: 100px;
 }
 @media screen and (max-width: 768px){
+    .about-us{
+        padding: 40px 0;
+    }
+    .index-s6{
+        display: none;
+    }
     .cont-info{
         letter-spacing: 0px;
-        margin: 20px 0;
+        margin:0 0 20px;
     }
     .left-info{
         /*width: 430px;*/

@@ -28,7 +28,11 @@ footer{
 .swiper-carousel img{
     width: 100%;
 }
-
+@media screen and (max-width: 768px){
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+}
 /*=================================slide2======================================*/
 .slide-slide2{
     background: url("../resource/index/slide2_bg_02.png") no-repeat bottom center;
@@ -395,7 +399,7 @@ footer{
 @media screen and (max-width: 768px){
     .index_three{
         text-align: center;
-        margin-top: 100px;
+        margin-top: 5rem;
         font-weight: bolder;
         /*-webkit-text-stroke: 2px #fff;*/
     }
@@ -411,13 +415,13 @@ footer{
     }
     .three_item p{
         font-size: 18px;
-        margin: 0 0 30px 0;
+        margin: 0 0 1.5rem 0;
         letter-spacing: 3px;
     }
     .three_item .img-bg{
-        width: 64px;
-        height: 64px;
-        margin: 35px auto 35px;
+        width: 3rem;
+        height: 3rem;
+        margin: 1.5rem auto;
     }
     .three_item p:before{
         width: 50px;
@@ -433,7 +437,6 @@ footer{
 .four-left{
     margin-top: 20%;
     width: 30%;
-    margin-left: 10%;
     float: left;
 }
 .four-left .top-txt{
@@ -444,10 +447,9 @@ footer{
     margin: 30px 0 0;
 }
 .four-right{
-    width: 50%;
-    margin-right: 10%;
-    float: left;
-    margin-top: 5%;
+    width: 60%;
+    margin-top: 10%;
+    float: right;
 }
 .slide4-page{
     width: 60px;
@@ -455,22 +457,14 @@ footer{
     position: static;
 }
 .four-swiper .swiper-slide{
-    /*display: flex;*/
-    /*justify-content:space-between;*/
+
 }
 .xueba{
     text-align: center;
-    width: 29%;
-    /*min-width: 250px;*/
-    /*height: 50%;*/
-    float: left;
-    margin: 3% 2% 0;
-    overflow: hidden;
 }
 .xueba .lazy-box{
     width: 100%;
     min-width: 200px;
-    height: 300px;
     overflow: hidden;
 }
 .xueba p.name{
@@ -484,73 +478,40 @@ footer{
 .xueba .detail{
     display: none;
 }
-
-@media screen and (max-width: 1366px){
-    .xueba{
-        margin: 5% 2% 0;
-    }
-    .four-left{
-        margin-top: 18%;
-    }
-    .xueba .lazy-box{
-        width: 80%;
-        /*min-width: 250px;*/
-        height: 200px;
-        /*overflow: hidden;*/
-    }
-    .xueba p.name{
-        font-size: 18px;
-        line-height: 30px;
-    }
-    .xueba p.intro{
-        font-size: 14px;
-    }
-    .xueba .lazy-box img{
-        width: 80%;
-    }
-}
 @media screen and (max-width: 768px){
+    .slide4-page{
+        margin: 5px auto;
+    }
     .four-left{
-        margin-top: 70px;
-        margin-left: 0;
         width: 100%;
-        float: left;
     }
     .four-left .top-txt{
-        margin: 15px auto 0;
         text-align: center;
+        margin: 1rem 1rem 0;
+        width: auto;
+    }
+    .four-left .top-t{
+        padding: 0;
+        background: none;
     }
     .four-right{
-        width: 100%;
-        margin-right: 0;
-        float: left;
-        margin-top: 0;
-    }
-    .slide4-page{
-        width: 60px;
-        margin: auto;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -35px;
+        width: 90%;
+        /*float: none;*/
+        margin-right: 5%;
+        margin-top: 1rem;
     }
     .xueba .lazy-box{
-        width: 100%;
-        min-width: 100%;
-        height: 100%;
-        overflow: hidden;
+        width: 80%;
+        margin: auto;
+        min-width: inherit;
     }
     .xueba p.name{
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
     }
-    .xueba .detail{
-        display: none;
-    }
-}
-@media screen and (max-width: 720px){
     .xueba p.intro{
-        font-size: 12px;
+        font-size: 0.7rem;
+        line-height: 1.2rem;
     }
 }
 /*===========================slide5==============================*/
@@ -564,7 +525,8 @@ footer{
 .five_top .top-t{
     /*background: url("../resource/index/index_2__12_10.png") no-repeat bottom center;*/
     /*width: 230px;*/
-    margin: 10% auto 70px;
+    margin: 8% auto 70px;
+    text-align: center;
 }
 .slide3-top-arrow{
     margin-bottom: -10px;
@@ -577,14 +539,14 @@ footer{
     font-size: 18px;
     line-height: 24px;
 }
-.five_top .top-txt:after{
+/*.five_top .top-txt:after{
     content: "";
     display: block;
     width: 80px;
     height: 2px;
     background: #999;
     margin: 20px auto 0;
-}
+}*/
 .five-bt{
     margin-top: 6%;
     padding-bottom: 5px;
@@ -593,59 +555,98 @@ footer{
     float: left;
 }
 /**/
-.line-bar{
-    position: relative;
+.linebar-box{
     width: 45%;
-    height: 90px;
+    /*height: 90px;*/
     display: inline-block;
-    line-height: 90px;
-    font-size: 18px;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 8px;
-    margin:20px 0 100px;
-}
-.line-bar p:hover{
-    border-radius: 8px;
-    background: rgba(0,0,0,0.1);
-}
-.line-bar.bar1{
-    background: url("../resource/index/tabbar_bg_1.jpg")  repeat-x;
-}
-.line-bar.bar2{
-    float: right;
-    background: url("../resource/index/tabbar_bg_2.jpg")  repeat-x;
-}
-.line-bar.bar3{
-    background: url("../resource/index/tabbar_bg_3.jpg")  repeat-x;
-}
-.line-bar.bar4{
-    float: right;
-    background: url("../resource/index/tabbar_bg_4.jpg")  repeat-x;
+    margin: 20px 0 100px;
 }
 .bar-icon{
-    position: absolute;
-    display: inline-block;
-    width: 40px;
+    transition: all 0.5s;
+}
+.linebar-box:hover .bar-icon{
+    transform: rotate(360deg) ;
+}
+.linebar2, .linebar4{
+    float: right;
+}
+.linebar-box p{
     height: 40px;
-    top: -20px;
-    left: -20px;
+    line-height: 40px;
+    background: #dbdbdb;
+    text-align: center;
+    font-size: 18px;
+}
+.line-bar{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+    /*width: 45%;*/
+    height: 140px;
+}
+
+.line-bar.bar1{
+    background: url("../resource/index/tabbar_bg_2.jpg")  repeat-x ;
+    background-size: contain;
+}
+.line-bar.bar2{
+    /*float: right;*/
+    background: url("../resource/index/tabbar_bg_1.jpg")  repeat-x;
+    background-size: contain;
+
+}
+.line-bar.bar3{
+    background: url("../resource/index/tabbar_bg_4.jpg")  repeat-x;
+    background-size: contain;
+
+}
+.line-bar.bar4{
+    /*float: right;*/
+    background: url("../resource/index/tabbar_bg_3.jpg")  repeat-x;
+    background-size: contain;
+
+}
+.bar-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 35px 0 0 100px;
 }
 .bar-icon.bar-ico1{
     /*background: url("../resource/index/tab-ico1.png") center / cover no-repeat ;*/
-    background: url("../resource/index/tabico1.png") center / cover no-repeat ;
+    background: url("../resource/index/tabico2.png") center / cover no-repeat ;
 }
 .bar-icon.bar-ico2{
     /*background: url("../resource/index/tab-ico2.png") center / cover no-repeat ;*/
-    background: url("../resource/index/tabico2.png") center / cover no-repeat ;
+    background: url("../resource/index/tabico1.png") center / cover no-repeat ;
 }
 .bar-icon.bar-ico3{
     /*background: url("../resource/index/tab-ico3.png") center / cover no-repeat ;*/
-    background: url("../resource/index/tabico3.png") center / cover no-repeat ;
+    background: url("../resource/index/tabico4.png") center / cover no-repeat ;
 }
 .bar-icon.bar-ico4{
     /*background: url("../resource/index/tab-ico4.png") center / cover no-repeat ;*/
-    background: url("../resource/index/tabico4.png") center / cover no-repeat ;
+    background: url("../resource/index/tabico3.png") center / cover no-repeat ;
+}
+.person{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+
+.person img{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 200%;
+}
+@media screen and (min-width: 1367px){
+    .person {
+        margin-right: 60px;
+    }
 }
 /**/
 .icons{
@@ -718,12 +719,23 @@ footer{
 }
 /**/
 @media screen and (max-width: 1366px){
+    .linebar-box{
+        width: 45%;
+        margin: 20px 0 80px;
+    }
+    .bar-icon{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 45px 0 0 70px;
+    }
     .five_top .top-t{
         margin: 8% auto 30px;
         font-size: 24px;
+        text-align: center;
     }
     .five-bt{
-        margin-top: 20px;
+        margin-top: 50px;
     }
     .icons{
         width: 23%;
@@ -751,6 +763,46 @@ footer{
     }
 }
 @media screen and (max-width: 768px){
+    .slide3-top-arrow{
+        display: none;
+    }
+    .linebar-box{
+        width: 9rem;
+        height: 9rem;
+        margin: 0.5rem;
+    }
+    .line-bar{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        height: 8rem;
+    }
+    .bar-icon{
+        display: none;
+        width: 50px;
+        height: 50px;
+        margin: 45px 0 0 70px;
+    }
+    .person{
+        display: inline-block;
+        width: 8rem;
+        height: 8rem;
+        position: relative;
+        float: right;
+        margin-right: 0.5rem;
+    }
+    .person img{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 100%;
+    }
+    .linebar-box p{
+        height: auto;
+        line-height: 1rem;
+        text-align: center;
+        font-size: 0.7rem;
+        background: none;
+    }
     .five_top .top-t{
         /*background: url("../resource/index/index_2__12_10.png") no-repeat bottom center;*/
         width: 230px;
@@ -760,13 +812,16 @@ footer{
     .five_top .top-t{
         line-height: 24px;
         font-size: 22px;
+        padding: 0;
+        background: none;
     }
     .five_top .top-txt{
+        display: none;
         /*width: 316px;*/
         margin: 0 10px;
         color: #666;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
     }
     .five-bt{
         margin-top: 8px;
@@ -774,106 +829,6 @@ footer{
     }
     .group-ic{
         float: left;
-    }
-    .icons{
-        width: 40%;
-        /*min-width: 40%;*/
-        min-height: 180px;
-        float: left;
-        margin: 0;
-        border-radius: 0px;
-        box-shadow: 2px 2px 5px #ccc;
-    }
-    .icons:hover{
-        background-color: #F4B81A;
-    }
-    .icons:hover .ic-txt{
-        color: #fff;
-    }
-    .icon1{
-        margin-left: 10%;
-    }
-    .icon3{
-        margin-left: 10%;
-    }
-    .icons .ic-txt{
-        padding: 0 10px;
-        line-height: 22px;
-        font-size: 14px;
-    }
-    .icons .bg-ic{
-        background-image: url("../resource/index/icons.png");
-        background-repeat: no-repeat;
-        width: 64px;
-        height: 64px;
-        display: block;
-        margin: 15px auto 10px;
-        transition: background 0.5s;
-    }
-
-    .line-bar{
-        position: relative;
-        width: 45%;
-        height: 130px;
-        display: inline-block;
-        line-height: normal;
-        font-size: 16px;
-        color: #ffffff;
-        text-align: center;
-        border-radius: 4px;
-        margin: 10px 0 0;
-    }
-    .line-bar p{
-        margin: 50px 5px 0;
-
-    }
-    .line-bar p:hover{
-        border-radius: 0;
-        background: none;
-    }
-    .line-bar.bar1{
-        margin-left: 3%;
-        background: url("../resource/index/tabbar_bg_1.jpg") top left / contain;
-    }
-    .line-bar.bar2{
-        float: right;
-        margin-right: 3%;
-        background: url("../resource/index/tabbar_bg_2.jpg")  top left / contain;
-    }
-    .line-bar.bar3{
-        margin-left: 3%;
-        background: url("../resource/index/tabbar_bg_3.jpg")  top left / contain;
-    }
-    .line-bar.bar4{
-        float: right;
-        margin-right: 3%;
-        background: url("../resource/index/tabbar_bg_4.jpg")  top left / contain;
-    }
-    .bar-icon{
-        position: absolute;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        top: 10px;
-        left: 50%;
-        margin-left: -15px;
-    }
-
-    .bar-icon.bar-ico1{
-        /*background: url("../resource/index/tab-ico1.png") center / cover no-repeat ;*/
-        background: url("../resource/index/tabico1.png") center / cover no-repeat ;
-    }
-    .bar-icon.bar-ico2{
-        /*background: url("../resource/index/tab-ico2.png") center / cover no-repeat ;*/
-        background: url("../resource/index/tabico2.png") center / cover no-repeat ;
-    }
-    .bar-icon.bar-ico3{
-        /*background: url("../resource/index/tab-ico3.png") center / cover no-repeat ;*/
-        background: url("../resource/index/tabico3.png") center / cover no-repeat ;
-    }
-    .bar-icon.bar-ico4{
-        /*background: url("../resource/index/tab-ico4.png") center / cover no-repeat ;*/
-        background: url("../resource/index/tabico4.png") center / cover no-repeat ;
     }
 }
 .slide-arrow-bg{
@@ -939,7 +894,7 @@ footer{
     /*margin: 0 0 40px;*/
     width: 50%;
     float: left;
-    margin: 2rem 0 0;
+    margin-top: 8%;
     clear: none;
     overflow: inherit;
     text-align: center;
@@ -978,13 +933,16 @@ footer{
         background: #999;
         margin: 30px auto 0;
     }
+    .six_top{
+        margin-top: 10%;
+    }
 }
 @media screen and (max-width: 1366px){
     .six_top{
         margin-top: 6%;
     }
     .code{
-        margin: 30px 0 0;
+        margin: 1.2rem 0 0;
     }
     .code .ss-1{
         font-size: 24px;
@@ -1000,6 +958,9 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    .index-s6{
+        display: none;
+    }
     .six_top{
         margin-top: 70px;
     }
@@ -1008,7 +969,7 @@ footer{
         float: left;
     }
     .contact{
-        font-size: 16px;
+        font-size: 0.9rem;
         margin-top: 5px;
         margin-left: 8px;
     }
@@ -1145,7 +1106,7 @@ footer{
     .code {
         width: 50%;
         float: left;
-        margin: 5px 0 0;
+        margin: 0.9rem 0 0;
         clear: none;
         overflow: inherit;
         text-align: center;
