@@ -68,7 +68,7 @@ var carouselSwiper = new Swiper('.swiper-carousel', {
 
 if(scope.width <= 768){
     var xuebaSlide = new Swiper('.four-swiper', {
-        // autoplay: 5000,//可选选项，自动滑动
+        autoplay: 5000,//可选选项，自动滑动
         autoplayDisableOnInteraction : false,
         pagination: '.slide4-page',
         paginationClickable :true,
@@ -85,7 +85,7 @@ if(scope.width <= 768){
     });
 }else{
     var xuebaSlide = new Swiper('.four-swiper', {
-        // autoplay: 5000,//可选选项，自动滑动
+        autoplay: 5000,//可选选项，自动滑动
         autoplayDisableOnInteraction : false,
         pagination: '.slide4-page',
         paginationClickable :true,

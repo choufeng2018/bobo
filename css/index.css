@@ -487,12 +487,14 @@ footer{
     }
     .four-left .top-txt{
         text-align: center;
-        margin: 1rem 1rem 0;
+        margin: 0.8rem 1rem 0;
         width: auto;
+        line-height: 1rem;
     }
     .four-left .top-t{
         padding: 0;
         background: none;
+        font-size: 1.2rem;
     }
     .four-right{
         width: 90%;
@@ -511,7 +513,7 @@ footer{
     }
     .xueba p.intro{
         font-size: 0.7rem;
-        line-height: 1.2rem;
+        line-height: normal;
     }
 }
 /*===========================slide5==============================*/
