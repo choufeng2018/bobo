@@ -48,11 +48,11 @@ require_once ('inc/email.inc.php');
 //##########################################
 $smtpserver = "ssl://smtp.qq.com";//SMTP服务器
 $smtpserverport = "465";//SMTP服务器端口
-$smtpusermail = "395442161@qq.com";//SMTP服务器的用户邮箱
+$smtpusermail = "3416144896@qq.com";//SMTP服务器的用户邮箱
 $smtpemailto = "service@xuebabobo.com";//发送给谁
 
-$smtpuser = "395442161";//SMTP服务器的用户帐号
-$smtppass = "ewvouxhcgngbcaef";//填写SMTP服务器的用户密码，不是qq密码
+$smtpuser = "3416144896";//SMTP服务器的用户帐号
+$smtppass = "ptkyjmxsbdjrdabi";//填写SMTP服务器的用户密码，不是qq密码
 $mailsubject = "bobo官网邮件";//$con_name."发来的咨询";//邮件主题
 $mailbody['name']="姓名：".$_POST['name']."<br>";
 $mailbody['phone']="手机：".$_POST['phone']."<br>";
